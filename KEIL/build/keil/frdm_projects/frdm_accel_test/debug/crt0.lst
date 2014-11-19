@@ -1,0 +1,109 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/******************************************************
+                       ***********************
+    2 00000000         ; * (c) Copyright 2010-2012, Freescale Semiconductor Inc
+                       .
+    3 00000000         ; * ALL RIGHTS RESERVED.
+    4 00000000         ; ******************************************************
+                       *********************//*!
+    5 00000000         ; * @file      crt0.s
+    6 00000000         ; * @version   1.0.3.0
+    7 00000000         ; * @date      May-08-2013
+    8 00000000         ; * @brief     startup function (low level part).
+    9 00000000         ; *
+   10 00000000         ; * Revision History:
+   11 00000000         ; *  1. 08/05/2013   B34185  Initially written
+   12 00000000         ; *  2. 03/12/2013   B34185  Re-written for Kinetis L
+   13 00000000         ; *  3. 20/01/2014   B34185  BOOT_STACK_ADDRESS eliminat
+                       ed
+   14 00000000         ; ******************************************************
+                       ************************/
+   15 00000000         
+   16 00000000         ;         AREA   Crt0, CODE, READONLY      ; name this b
+                       lock of code
+   17 00000000                 AREA             |.text|, CODE, READONLY
+   18 00000000         
+   19 00000000         __startup
+                               PROC
+   20 00000000                 EXPORT           __startup             [WEAK]
+   21 00000000 2000            MOVS             R0,#0x0     ; Initialize the GP
+                                                            Rs
+   22 00000002 4601            MOV              R1,R0
+   23 00000004 4602            MOV              R2,R0
+   24 00000006 4603            MOV              R3,R0
+   25 00000008 4604            MOV              R4,R0
+   26 0000000A 4605            MOV              R5,R0
+   27 0000000C 4606            MOV              R6,R0
+   28 0000000E 4607            MOV              R7,R0
+   29 00000010 4680            MOV              R8,R0
+   30 00000012 4681            MOV              R9,R0
+   31 00000014 4682            MOV              R10,R0
+   32 00000016 4683            MOV              R11,R0
+   33 00000018 4684            MOV              R12,R0
+   34 0000001A B672            CPSID            i           ; Disable interrupt
+                                                            s by default
+   35 0000001C                 IMPORT           start
+   36 0000001C F7FF FFFE       BL               start
+   37 00000020         __done                               ; endless loop
+   38 00000020 E7FE            B                __done
+   39 00000022                 ENDP
+   40 00000022         
+   41 00000022                 END
+Command Line: --debug --xref --cpu=Cortex-M0+ --apcs=interwork --depend=.\debug
+\crt0.d -o.\debug\crt0.o -I..\..\..\..\src\cpu\KEIL -IC:\Users\MasRuR\Documents
+\GitHub\Freescale\KEIL\build\keil\frdm_projects\frdm_accel_test\RTE -IC:\Keil_v
+5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\In
+clude --predefine="__EVAL SETA 1" --predefine="MKL43Z256xxx4 SETA 1" --list=.\d
+ebug\crt0.lst ..\..\..\..\src\cpu\KEIL\crt0.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 17 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+   Uses
+      None
+Comment: .text unused
+__done 00000020
+
+Symbol: __done
+   Definitions
+      At line 37 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+   Uses
+      At line 38 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+Comment: __done used once
+__startup 00000000
+
+Symbol: __startup
+   Definitions
+      At line 19 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+   Uses
+      At line 20 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+Comment: __startup used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 35 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+   Uses
+      At line 36 in file ..\..\..\..\src\cpu\KEIL\crt0.s
+Comment: start used once
+1 symbol
+336 symbols in table

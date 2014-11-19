@@ -1,0 +1,17 @@
+.\debug\ftfa.o: ..\..\..\..\src\drivers\ftfa\ftfa.c
+.\debug\ftfa.o: ..\..\..\..\src\common\common.h
+.\debug\ftfa.o: ..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h
+.\debug\ftfa.o: ..\..\..\..\src\cpu\device.h
+.\debug\ftfa.o: C:\Keil\ARM\CMSIS\core_cm0.h
+.\debug\ftfa.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\debug\ftfa.o: C:\Keil\ARM\CMSIS\core_cmInstr.h
+.\debug\ftfa.o: C:\Keil\ARM\CMSIS\core_cmFunc.h
+.\debug\ftfa.o: ..\..\..\..\src\cpu\headers\MKL43Z4.h
+.\debug\ftfa.o: C:\Keil\ARM\CMSIS\arm_math.h
+.\debug\ftfa.o: C:\Keil\ARM\CMSIS\core_cm0.h
+.\debug\ftfa.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\debug\ftfa.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\debug\ftfa.o: ..\..\..\..\src\common\startup.h
+.\debug\ftfa.o: ..\..\..\..\src\cpu\arm_cm0.h
+.\debug\ftfa.o: ..\..\..\..\src\cpu\arch_delay.h
+.\debug\ftfa.o: ..\..\..\..\src\drivers\ftfa\ftfa.h

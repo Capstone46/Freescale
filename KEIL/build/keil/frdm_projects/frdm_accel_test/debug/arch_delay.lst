@@ -1,0 +1,75 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/******************************************************
+                       ***********************
+    2 00000000         ; * (c) Copyright 2010-2012, Freescale Semiconductor Inc
+                       .
+    3 00000000         ; * ALL RIGHTS RESERVED.
+    4 00000000         ; ******************************************************
+                       *********************//*!
+    5 00000000         ; * @file      arch_delay.s
+    6 00000000         ; * @version   1.0.2.0
+    7 00000000         ; * @date      Jan-17-2013
+    8 00000000         ; * @brief     Module with generic delay function delayi
+                       ng software execution 
+    9 00000000         ; *            for given number of core clock ticks.
+   10 00000000         ; *
+   11 00000000         ; * Revision History:
+   12 00000000         ; *  1. 01/01/2010   R55013   Initially written
+   13 00000000         ; *  2. 10/08/2012   R55013   Ported to Cortex-M0+
+   14 00000000         ; ******************************************************
+                       ************************/
+   15 00000000         
+   16 00000000                 AREA             |.text|, CODE, READONLY
+   17 00000000         
+   18 00000000                 EXPORT           arch_delay
+   19 00000000         arch_delay
+   20 00000000 3808            SUBS             R0,#8       ; subtract function
+                                                             entry and exit cod
+                                                            e execution ticks
+   21 00000002 3805    loop    SUBS             R0,#5
+   22 00000004 D5FD            BPL              loop
+   23 00000006 4770            BX               LR
+   24 00000008                 END
+Command Line: --debug --xref --cpu=Cortex-M0+ --apcs=interwork --depend=.\debug
+\arch_delay.d -o.\debug\arch_delay.o -I..\..\..\..\src\cpu\KEIL -IC:\Users\MasR
+uR\Documents\GitHub\Freescale\KEIL\build\keil\frdm_projects\frdm_accel_test\RTE
+ -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include -IC:\Keil_v5\
+ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="MKL43Z256xxx4 SETA 1
+" --list=.\debug\arch_delay.lst ..\..\..\..\src\cpu\KEIL\arch_delay.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 16 in file ..\..\..\..\src\cpu\KEIL\arch_delay.s
+   Uses
+      None
+Comment: .text unused
+arch_delay 00000000
+
+Symbol: arch_delay
+   Definitions
+      At line 19 in file ..\..\..\..\src\cpu\KEIL\arch_delay.s
+   Uses
+      At line 18 in file ..\..\..\..\src\cpu\KEIL\arch_delay.s
+Comment: arch_delay used once
+loop 00000002
+
+Symbol: loop
+   Definitions
+      At line 21 in file ..\..\..\..\src\cpu\KEIL\arch_delay.s
+   Uses
+      At line 22 in file ..\..\..\..\src\cpu\KEIL\arch_delay.s
+Comment: loop used once
+3 symbols
+335 symbols in table

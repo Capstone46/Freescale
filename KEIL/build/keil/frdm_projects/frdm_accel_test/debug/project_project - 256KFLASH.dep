@@ -1,0 +1,1012 @@
+Dependencies for Project 'project', Target 'project - 256KFLASH': (DO NOT MODIFY !)
+F (..\..\..\..\src\common\common.c)(0x538E33A4)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\common.o --omf_browse .\debug\common.crf --depend .\debug\common.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+F (..\..\..\..\src\common\common.h)(0x536AAB22)()
+F (..\..\..\..\src\common\startup.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\startup.o --omf_browse .\debug\startup.crf --depend .\debug\startup.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+F (..\..\..\..\src\common\startup.h)(0x5335CD00)()
+F (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)()
+F (..\..\..\..\src\cpu\arm_cm0.c)(0x54593E75)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\arm_cm0.o --omf_browse .\debug\arm_cm0.crf --depend .\debug\arm_cm0.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+F (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)()
+F (..\..\..\..\src\cpu\device.h)(0x54593E30)()
+F (..\..\..\..\src\cpu\start.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\start.o --omf_browse .\debug\start.crf --depend .\debug\start.d)
+I (..\..\..\..\src\cpu\start.h)(0x5335CD00)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+F (..\..\..\..\src\cpu\start.h)(0x5335CD00)()
+F (..\..\..\..\src\cpu\vectors.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\vectors.o --omf_browse .\debug\vectors.crf --depend .\debug\vectors.d)
+I (..\..\..\..\src\cpu\vectors.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+F (..\..\..\..\src\cpu\vectors.h)(0x5335CD00)()
+F (..\..\..\..\src\cpu\headers\MKL46Z4.h)(0x5335CD00)()
+F (..\..\..\..\src\cpu\KEIL\arch_delay.s)(0x5335CD00)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I..\..\..\..\src\cpu\KEIL-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "MKL43Z256xxx4 SETA 1"--list .\debug\arch_delay.lst --xref -o .\debug\arch_delay.o --depend .\debug\arch_delay.d)
+F (..\..\..\..\src\cpu\KEIL\crt0.s)(0x5335CD00)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I..\..\..\..\src\cpu\KEIL-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "MKL43Z256xxx4 SETA 1"--list .\debug\crt0.lst --xref -o .\debug\crt0.o --depend .\debug\crt0.d)
+F (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)()
+F (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)()
+F (..\..\..\..\src\drivers\adc\adc.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\adc.o --omf_browse .\debug\adc.crf --depend .\debug\adc.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)
+F (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)()
+F (..\..\..\..\src\drivers\bme\bme.h)(0x5335CD00)()
+F (..\..\..\..\src\drivers\cmp\cmp.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\cmp.o --omf_browse .\debug\cmp.crf --depend .\debug\cmp.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\dac\dac.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\dac.o --omf_browse .\debug\dac.crf --depend .\debug\dac.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\dma\dma.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\dma.o --omf_browse .\debug\dma.crf --depend .\debug\dma.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\ftfa\ftfa.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\ftfa.o --omf_browse .\debug\ftfa.crf --depend .\debug\ftfa.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)
+F (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\gpio\gpio.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\gpio.o --omf_browse .\debug\gpio.crf --depend .\debug\gpio.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\i2c\i2c.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\i2c.o --omf_browse .\debug\i2c.crf --depend .\debug\i2c.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\llwu\llwu.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\llwu.o --omf_browse .\debug\llwu.crf --depend .\debug\llwu.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)
+F (..\..\..\..\src\drivers\mcg\mcg.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\mcg\mcg.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\mcg.o --omf_browse .\debug\mcg.crf --depend .\debug\mcg.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg\mcg.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\osc\osc.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\osc.o --omf_browse .\debug\osc.crf --depend .\debug\osc.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)
+F (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\pit\pit.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\pit.o --omf_browse .\debug\pit.crf --depend .\debug\pit.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)
+F (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\pmc\pmc.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\pmc.o --omf_browse .\debug\pmc.crf --depend .\debug\pmc.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\rtc\rtc.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\rtc.o --omf_browse .\debug\rtc.crf --depend .\debug\rtc.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)
+F (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\sim\sim.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\sim.o --omf_browse .\debug\sim.crf --depend .\debug\sim.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+F (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\slcd\lcdhdw.h)(0x5335CD00)()
+F (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\smc\smc.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\smc.o --omf_browse .\debug\smc.crf --depend .\debug\smc.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)
+F (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\spi\spi.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\spi.o --omf_browse .\debug\spi.crf --depend .\debug\spi.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\tpm\tpm.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\tpm.o --omf_browse .\debug\tpm.crf --depend .\debug\tpm.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\tsi\tsi.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\tsi\tsi.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\tsi.o --omf_browse .\debug\tsi.crf --depend .\debug\tsi.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tsi\tsi.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\uart\uart.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\uart.o --omf_browse .\debug\uart.crf --depend .\debug\uart.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)
+F (..\..\..\..\src\drivers\drivers.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\lptmr\lptmr.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\lptmr.o --omf_browse .\debug\lptmr.crf --depend .\debug\lptmr.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\flexio\flexio.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\flexio.o --omf_browse .\debug\flexio.crf --depend .\debug\flexio.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+F (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\lpuart\lpuart.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\lpuart.o --omf_browse .\debug\lpuart.crf --depend .\debug\lpuart.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\mcg_lite\mcg_lite.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\mcg_lite.o --omf_browse .\debug\mcg_lite.crf --depend .\debug\mcg_lite.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)()
+F (..\..\..\..\src\drivers\mcm\mcm.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\mcm.o --omf_browse .\debug\mcm.crf --depend .\debug\mcm.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)
+F (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\rcm\rcm.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\rcm.o --omf_browse .\debug\rcm.crf --depend .\debug\rcm.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)
+F (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)()
+F (..\..\..\..\src\drivers\sai\sai.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\sai.o --omf_browse .\debug\sai.crf --depend .\debug\sai.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)
+F (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\slcd\lcd.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\lcd.o --omf_browse .\debug\lcd.crf --depend .\debug\lcd.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcdhdw_FRDM_KL43Z.h)(0x538FC6D8)
+F (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)()
+F (..\..\..\..\src\drivers\vref\vref.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\vref.o --omf_browse .\debug\vref.crf --depend .\debug\vref.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\usbd\usb_class.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_class.o --omf_browse .\debug\usb_class.crf --depend .\debug\usb_class.d)
+I (..\..\..\..\src\drivers\usbd\usb_class.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\usb_class.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\usb_framework.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_framework.o --omf_browse .\debug\usb_framework.crf --depend .\debug\usb_framework.d)
+F (..\..\..\..\src\drivers\usbd\usb_framework.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\class\usb_audio.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_audio.o --omf_browse .\debug\usb_audio.crf --depend .\debug\usb_audio.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_audio.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\class\usb_batt_chg.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_batt_chg.o --omf_browse .\debug\usb_batt_chg.crf --depend .\debug\usb_batt_chg.d)
+F (..\..\..\..\src\drivers\usbd\class\usb_cdc.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_cdc.o --omf_browse .\debug\usb_cdc.crf --depend .\debug\usb_cdc.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_cdc.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\class\usb_cdc_pstn.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_cdc_pstn.o --omf_browse .\debug\usb_cdc_pstn.crf --depend .\debug\usb_cdc_pstn.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_cdc_pstn.h)(0x536A50A6)
+I (..\..\..\..\src\drivers\usbd\class\usb_cdc.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\class\usb_composite.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_composite.o --omf_browse .\debug\usb_composite.crf --depend .\debug\usb_composite.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_composite.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\class\usb_dfu.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_dfu.o --omf_browse .\debug\usb_dfu.crf --depend .\debug\usb_dfu.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_dfu.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\class\usb_hid.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_hid.o --omf_browse .\debug\usb_hid.crf --depend .\debug\usb_hid.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_hid.h)(0x538E44EC)
+F (..\..\..\..\src\drivers\usbd\class\usb_hid.h)(0x538E44EC)()
+F (..\..\..\..\src\drivers\usbd\class\usb_msc.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_msc.o --omf_browse .\debug\usb_msc.crf --depend .\debug\usb_msc.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_msc.h)(0x538FB8FA)
+F (..\..\..\..\src\drivers\usbd\class\usb_msc_scsi.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_msc_scsi.o --omf_browse .\debug\usb_msc_scsi.crf --depend .\debug\usb_msc_scsi.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_msc_scsi.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\usbd\class\usb_msc.h)(0x538FB8FA)
+F (..\..\..\..\src\drivers\usbd\class\usb_phdc.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_phdc.o --omf_browse .\debug\usb_phdc.crf --depend .\debug\usb_phdc.d)
+F (..\..\..\..\src\drivers\usbd\class\usb_printer.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_printer.o --omf_browse .\debug\usb_printer.crf --depend .\debug\usb_printer.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_printer.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\class\usb_video.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_video.o --omf_browse .\debug\usb_video.crf --depend .\debug\usb_video.d)
+I (..\..\..\..\src\drivers\usbd\class\usb_video.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\hal\usb_bdt_kinetis.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\hal\usb_dci_kinetis.c)(0x538F9BB0)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_dci_kinetis.o --omf_browse .\debug\usb_dci_kinetis.crf --depend .\debug\usb_dci_kinetis.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (..\..\..\..\src\drivers\usbd\hal\usb_dciapi.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\hal\usb_dci_kinetis.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\hal\usb_dciapi.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\hal\usb_devapi.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\hal\usb_driver.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_driver.o --omf_browse .\debug\usb_driver.crf --depend .\debug\usb_driver.d)
+I (..\..\..\..\src\drivers\usbd\hal\usb_devapi.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\hal\usbevent.c)(0x536A50A6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usbevent.o --omf_browse .\debug\usbevent.crf --depend .\debug\usbevent.d)
+I (..\..\..\..\src\drivers\usbd\hal\usbevent.h)(0x536A50A6)
+F (..\..\..\..\src\drivers\usbd\hal\usbevent.h)(0x536A50A6)()
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\derivative.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\types.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\USB_Config.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\usb_descriptor.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_descriptor.o --omf_browse .\debug\usb_descriptor.crf --depend .\debug\usb_descriptor.d)
+I (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\derivative.h)(0x538FB8FA)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\types.h)(0x538FB8FA)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x541A706A)
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\usb_descriptor.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\usb_mouse.c)(0x53FFBEE0)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\usb_mouse.o --omf_browse .\debug\usb_mouse.crf --depend .\debug\usb_mouse.d)
+I (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\derivative.h)(0x538FB8FA)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\types.h)(0x538FB8FA)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x541A706A)
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\usb_mouse.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\usbd\usb_api\usb_hid\user_config.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\flexio\flexio_i2c\flexio_i2c.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\flexio_i2c.o --omf_browse .\debug\flexio_i2c.crf --depend .\debug\flexio_i2c.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\drivers.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\bme\bme.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)
+I (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)
+I (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcdhdw_FRDM_KL43Z.h)(0x538FC6D8)
+I (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)
+I (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_uart/flexio_uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2c/flexio_i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2s/flexio_i2s.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_master/flexio_spi_master.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_slave/flexio_spi_slave.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\flexio\flexio_i2c\flexio_i2c.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\flexio\flexio_i2s\flexio_i2s.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\flexio_i2s.o --omf_browse .\debug\flexio_i2s.crf --depend .\debug\flexio_i2s.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\drivers.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\bme\bme.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)
+I (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)
+I (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcdhdw_FRDM_KL43Z.h)(0x538FC6D8)
+I (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)
+I (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_uart/flexio_uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2c/flexio_i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2s/flexio_i2s.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_master/flexio_spi_master.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_slave/flexio_spi_slave.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\flexio\flexio_i2s\flexio_i2s.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\flexio\flexio_spi_master\flexio_spi_master.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\flexio_spi_master.o --omf_browse .\debug\flexio_spi_master.crf --depend .\debug\flexio_spi_master.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\drivers.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\bme\bme.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)
+I (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)
+I (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcdhdw_FRDM_KL43Z.h)(0x538FC6D8)
+I (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)
+I (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_uart/flexio_uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2c/flexio_i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2s/flexio_i2s.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_master/flexio_spi_master.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_slave/flexio_spi_slave.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\flexio\flexio_spi_master\flexio_spi_master.h)(0x538FB8FA)()
+F (..\..\..\..\src\drivers\flexio\flexio_spi_slave\flexio_spi_slave.c)(0x538FB8FA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\flexio_spi_slave.o --omf_browse .\debug\flexio_spi_slave.crf --depend .\debug\flexio_spi_slave.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\drivers.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\bme\bme.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)
+I (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)
+I (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcdhdw_FRDM_KL43Z.h)(0x538FC6D8)
+I (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)
+I (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_uart/flexio_uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2c/flexio_i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2s/flexio_i2s.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_master/flexio_spi_master.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_slave/flexio_spi_slave.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)
+F (..\..\..\..\src\drivers\flexio\flexio_spi_slave\flexio_spi_slave.h)(0x538FB8FA)()
+F (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)()
+F (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)()
+F (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\frdm_accel_test.c)(0x545C9271)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\frdm_accel_test.o --omf_browse .\debug\frdm_accel_test.crf --depend .\debug\frdm_accel_test.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\drivers.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\adc\adc.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\bme\bme.h)(0x5335CD00)
+I (..\..\..\..\src\drivers\cmp\cmp.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dac\dac.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\dma\dma.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\ftfa\ftfa.h)(0x53699D22)
+I (..\..\..\..\src\drivers\gpio\gpio.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\llwu\llwu.h)(0x53699D22)
+I (..\..\..\..\src\drivers\lptmr\lptmr.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcm\mcm.h)(0x53699D22)
+I (..\..\..\..\src\drivers\osc\osc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pit\pit.h)(0x53699D22)
+I (..\..\..\..\src\drivers\pmc\pmc.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\rcm\rcm.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\rtc\rtc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\sim\sim.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcd.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\slcd\lcdhdw_FRDM_KL43Z.h)(0x538FC6D8)
+I (..\..\..\..\src\drivers\sai\sai.h)(0x53963C78)
+I (..\..\..\..\src\drivers\smc\smc.h)(0x53699D22)
+I (..\..\..\..\src\drivers\spi\spi.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\tpm\tpm.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\uart\uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_uart/flexio_uart.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2c/flexio_i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2s/flexio_i2s.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_master/flexio_spi_master.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_spi_slave/flexio_spi_slave.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\lpuart\lpuart.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\mcg_lite\mcg_lite.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\vref\vref.h)(0x536AAB22)
+I (..\..\..\..\src\devices\mma845x\mma845x.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\tss\derivative.h)(0x5335CD02)
+F (..\..\..\..\src\linker files\KEIL\256KB_Pflash.scf)(0x53699B28)()
+F (..\..\..\..\src\linker files\KEIL\32KB_RAM.scf)(0x5335CD00)()
+F (..\..\..\..\src\devices\fxos8700\fxos8700.c)(0x536AAB22)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\fxos8700.o --omf_browse .\debug\fxos8700.crf --depend .\debug\fxos8700.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio.h)(0x538FB8FA)
+I (..\..\..\..\src\drivers\flexio\flexio_i2c/flexio_i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\devices\fxos8700\fxos8700.h)(0x536AAB22)
+F (..\..\..\..\src\devices\fxos8700\fxos8700.h)(0x536AAB22)()
+F (..\..\..\..\src\devices\mma845x\mma845x.h)(0x538FB8FA)()
+F (..\..\..\..\src\devices\mma845x\mma845x.c)(0x53470B7A)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\mma845x.o --omf_browse .\debug\mma845x.crf --depend .\debug\mma845x.d)
+I (..\..\..\..\src\common\common.h)(0x536AAB22)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h)(0x538FBD12)
+I (..\..\..\..\src\cpu\device.h)(0x54593E30)
+I (C:\Keil\ARM\CMSIS\core_cm0.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x541A706A)
+I (C:\Keil\ARM\CMSIS\core_cmInstr.h)(0x545938EA)
+I (C:\Keil\ARM\CMSIS\core_cmFunc.h)(0x545938EA)
+I (..\..\..\..\src\cpu\headers\MKL43Z4.h)(0x538FB8FA)
+I (C:\Keil\ARM\CMSIS\arm_math.h)(0x545938EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x541A706C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x541A706A)
+I (..\..\..\..\src\common\startup.h)(0x5335CD00)
+I (..\..\..\..\src\cpu\arm_cm0.h)(0x536AAB22)
+I (..\..\..\..\src\cpu\arch_delay.h)(0x536AAB22)
+I (..\..\..\..\src\drivers\i2c\i2c.h)(0x538FB8FA)
+I (..\..\..\..\src\devices\mma845x\mma845x.h)(0x538FB8FA)
+F (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\freemaster\freemaster_appcmd.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_appcmd.o --omf_browse .\debug\freemaster_appcmd.crf --depend .\debug\freemaster_appcmd.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_can.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_can.o --omf_browse .\debug\freemaster_can.crf --depend .\debug\freemaster_can.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_kxx.o --omf_browse .\debug\freemaster_kxx.crf --depend .\debug\freemaster_kxx.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\freemaster\freemaster_protocol.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_protocol.o --omf_browse .\debug\freemaster_protocol.crf --depend .\debug\freemaster_protocol.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\freemaster\freemaster_rec.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_rec.o --omf_browse .\debug\freemaster_rec.crf --depend .\debug\freemaster_rec.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_rec.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_rec.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\freemaster\freemaster_scope.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_scope.o --omf_browse .\debug\freemaster_scope.crf --depend .\debug\freemaster_scope.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_serial.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_serial.o --omf_browse .\debug\freemaster_serial.crf --depend .\debug\freemaster_serial.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_sfio.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_sfio.o --omf_browse .\debug\freemaster_sfio.crf --depend .\debug\freemaster_sfio.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_tsa.c)(0x5335CD00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -IK\ARM\CMSIS\Lib -IK\ARM\CMSIS\Include -I..\..\..\..\src\projects\frdm_projects\frdm_accel_test -I..\..\..\..\src\common -I..\..\..\..\src\cpu -I..\..\..\..\src\cpu\headers -I..\..\..\..\src\cpu\KEIL -I..\..\..\..\src\drivers -I..\..\..\..\src\drivers\adc -I..\..\..\..\src\drivers\bme -I..\..\..\..\src\drivers\cmp -I..\..\..\..\src\drivers\dac -I..\..\..\..\src\drivers\dma -I..\..\..\..\src\drivers\flexio -I..\..\..\..\src\drivers\ftfa -I..\..\..\..\src\drivers\gpio -I..\..\..\..\src\drivers\i2c -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\llwu -I..\..\..\..\src\drivers\lptmr -I..\..\..\..\src\drivers\lpuart -I..\..\..\..\src\drivers\mcg -I..\..\..\..\src\drivers\mcg_lite -I..\..\..\..\src\drivers\mcm -I..\..\..\..\src\drivers\osc -I..\..\..\..\src\drivers\pit -I..\..\..\..\src\drivers\pmc -I..\..\..\..\src\drivers\rcm -I..\..\..\..\src\drivers\rtc -I..\..\..\..\src\drivers\sai -I..\..\..\..\src\drivers\sim -I..\..\..\..\src\drivers\slcd -I..\..\..\..\src\drivers\smc -I..\..\..\..\src\drivers\spi -I..\..\..\..\src\drivers\tpm -I..\..\..\..\src\drivers\tsi -I..\..\..\..\src\drivers\uart -I..\..\..\..\src\drivers\vref -I..\..\..\..\src\utilities\freemaster -I..\..\..\..\src\utilities\filters -I..\..\..\..\src\devices\fxos8700 -I..\..\..\..\src\devices\mma845x -I..\..\..\..\src\utilities\tss -IC:\Keil\ARM\CMSIS --diag_suppress=951 --c99  --bss_threshold=0-I "C:\Users\Ali\Desktop\UBC\EECE 419\Freescale KL43Z\frdm-kl43z48m-sc-baremetal\build\keil\frdm_projects\frdm_accel_test\RTE"-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DMKL43Z256xxx4-o .\debug\freemaster_tsa.o --omf_browse .\debug\freemaster_tsa.crf --depend .\debug\freemaster_tsa.d)
+I (..\..\..\..\src\utilities\freemaster\freemaster.h)(0x5335CD00)
+I (..\..\..\..\src\projects\frdm_projects\frdm_accel_test\freemaster_cfg.h)(0x538FB8FA)
+I (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_private.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_Kxx.h)(0x5335CD00)
+I (..\..\..\..\src\utilities\freemaster\freemaster_protocol.h)(0x5335CD00)
+F (..\..\..\..\src\utilities\freemaster\freemaster_tsa.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\fraclib\FRACLIB.h)(0x5335CD00)()
+F (..\..\..\..\src\utilities\fraclib\KEIL\fraclib.lib)(0x5310CAAA)()

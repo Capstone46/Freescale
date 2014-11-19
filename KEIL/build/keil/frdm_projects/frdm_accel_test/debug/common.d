@@ -1,0 +1,16 @@
+.\debug\common.o: ..\..\..\..\src\common\common.c
+.\debug\common.o: ..\..\..\..\src\common\common.h
+.\debug\common.o: ..\..\..\..\src\projects\frdm_projects\frdm_accel_test\appconfig.h
+.\debug\common.o: ..\..\..\..\src\cpu\device.h
+.\debug\common.o: C:\Keil\ARM\CMSIS\core_cm0.h
+.\debug\common.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\debug\common.o: C:\Keil\ARM\CMSIS\core_cmInstr.h
+.\debug\common.o: C:\Keil\ARM\CMSIS\core_cmFunc.h
+.\debug\common.o: ..\..\..\..\src\cpu\headers\MKL43Z4.h
+.\debug\common.o: C:\Keil\ARM\CMSIS\arm_math.h
+.\debug\common.o: C:\Keil\ARM\CMSIS\core_cm0.h
+.\debug\common.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\debug\common.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\debug\common.o: ..\..\..\..\src\common\startup.h
+.\debug\common.o: ..\..\..\..\src\cpu\arm_cm0.h
+.\debug\common.o: ..\..\..\..\src\cpu\arch_delay.h

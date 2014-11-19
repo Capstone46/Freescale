@@ -1,0 +1,80 @@
+#! armcc -E
+
+#define ROM_START  		0x20000000 - 0x2000 			; start of ROM at RAM begining
+#define ROM_SIZE    	0x00008000						; size of program flash 256kB
+#define SRAML_SIZE    	0x00002000						; 8kb -> SRAM_L
+#define SRAMU_SIZE    	0x00006000						; 24kb -> SRAM_U
+#define SRAM_SIZE 		0x8000							;(SRAML_SIZE + SRAMU_SIZE)			; 32kB -> SRAM
+#define STACK_SIZE		0x1000							; size of stack
+#define HEAP_SIZE		0x1000							; size of heap
+
+#define VECTORS_START	0x20000000 - 0x2000				; base adress for vector table
+#define VECTORS_SIZE	0x00000410						; size of vector table (256B -> 0x400) + flash config (16B -> 0x10)
+
+#define RAM_START    	(0x20000000 - 0x2000 + 0x410) 	;(RAM_VECTORS_START + RAM_VECTORS_SIZE - RAM_VECTORS_SIZE)  ; start of SRAM_L														
+#define SRAMU_START    	0x20000000						; start of SRAM_U 
+
+
+#define	STACK_BASE		(0x20000000 + 0x00006000 - 8)	; (SRAMU_START + SRAMU_SIZE - 8) The initial stack pointer must be aligned to a multiple of eight bytes
+#define HEAP_BASE		(0x20000000 + 0x00006000 - 0x1000 - 0x1000);(SRAMU_START + SRAML_SIZE - (STACK_SIZE + HEAP_SIZE)) The initial heap pointer must be aligned to a multiple of eight bytes
+
+LR_ROM	ROM_START	ROM_SIZE
+{
+	ER_VECTOR_TABLE	VECTORS_START	VECTORS_SIZE
+	{
+		vectors.o (.intvec, +FIRST)
+	}
+	
+	ER_ROM	+0
+	{
+		*(.text, +RO-CODE) 					;.text
+		*(.constdata, +RO-DATA) 					;.constdata
+	}
+	
+	ER_RAM_VECTOR_TABLE +0
+	{
+	}
+	
+	ER_RAM_CODE +0
+	{
+		*(CodeRelocateRam, +RW-CODE) 	; CodeRolacateRam
+	}
+	
+	ER_RAM_DATA +0
+	{
+		*(.data, +RW-DATA) 				; .data
+	}
+	
+	ER_RAM_BSS +0
+	{
+		*(.bss, +ZI) 					; .bss
+	}
+	
+	ER_RAM_NO_INIT +0 UNINIT
+	{
+		*(.noinit)						; .no_init
+	}
+	
+	ARM_LIB_STACK STACK_BASE EMPTY -SIZE_STACK 
+	{
+	}
+	ARM_LIB_HEAP HEAP_BASE EMPTY SIZE_HEAP 
+	{
+	}
+}
+
+LR_SYSTEM_REGISTER_FILE 0x40041000 0x20
+{	
+	ER_SYSTEM_REGISTER_FILE 0x40041000 UNINIT 0x20
+	{
+		*(.sysregfile)
+	}
+}
+
+LR_VBAT_REGISTER_FILE 0x4003E000 0x20
+{	
+	ER_VBAT_REGISTER_FILE 0x4003E000 UNINIT 0x20
+	{
+		*(.vbatregfile)
+	}
+}
