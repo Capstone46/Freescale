@@ -25,13 +25,17 @@
 #define MMA8451_OUT_Y_LSB 0x04
 #define MMA8451_OUT_Z_MSB 0x05
 #define MMA8451_OUT_Z_LSB 0x06
+#define MMA8451_XYZ_DATA_CFG 0x0E
+#define MMA8451_2gMODE 0x00
+#define MMA8451_4gMODE 0x01
+#define MMA8451_8gMODE 0x02
+
 
 static MMA8451_TDataState deviceData;
  
 
-uint8_t AccelX, AccelY, AccelZ;
-
-
+int8_t AccelX, AccelY, AccelZ;
+uint8_t aOutputRangeByte;
 
 uint8_t MMA8451_ReadReg(uint8_t addr, uint8_t *data, short dataSize) {
   uint8_t res;
@@ -69,8 +73,16 @@ uint8_t MMA8451_WriteReg(uint8_t addr, uint8_t val) {
 }
 
 static int8_t xyz[3];
+static int8_t xMSB;
+static int8_t yMSB;
+static int8_t zMSB;
+static int8_t xLSB;
+static int8_t yLSB;
+static int8_t zLSB;
 static int32_t count;
 static int32_t loopcount;
+
+static uint8_t rangeByte;
 
 void MMA8451_Run(void) {
   uint8_t res;
@@ -82,11 +94,23 @@ void MMA8451_Run(void) {
   /* F_READ: Fast read mode, data format limited to single byte (auto increment counter will skip LSB)
   * ACTIVE: Full scale selection
   */
+  res = MMA8451_WriteReg(MMA8451_XYZ_DATA_CFG, MMA8451_8gMODE);
   res = MMA8451_WriteReg(MMA8451_CTRL_REG_1,  MMA8451_F_READ_BIT_MASK|MMA8451_ACTIVE_BIT_MASK);
+  res = MMA8451_WriteReg(MMA8451_XYZ_DATA_CFG, MMA8451_8gMODE);
   if (res==ERR_OK) {
     for(;;) {
-      res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xyz, 3);
+      
+    	
+     //res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xyz, 3);
        
+    	res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xMSB, 1);
+    	res = MMA8451_ReadReg(MMA8451_OUT_Y_MSB, (uint8_t*)&yMSB, 1);
+    	res = MMA8451_ReadReg(MMA8451_OUT_Z_MSB, (uint8_t*)&zMSB, 1);
+    	res = MMA8451_ReadReg(MMA8451_OUT_X_LSB, (uint8_t*)&xLSB, 1);
+		res = MMA8451_ReadReg(MMA8451_OUT_Y_LSB, (uint8_t*)&yLSB, 1);
+    	res = MMA8451_ReadReg(MMA8451_OUT_Z_LSB, (uint8_t*)&zLSB, 1);
+    	res = MMA8451_ReadReg(MMA8451_XYZ_DATA_CFG, (uint8_t*)&rangeByte, 1);
+      
      /* START OF CODE FOR BLINKING THING*/ 
      /* if (xyz[2] < -115 || xyz[2] > 115 || xyz[1] < -115 || xyz[1] > 115 || xyz[0] < -115 || xyz[0] > 115) {
     	  
@@ -110,9 +134,15 @@ void MMA8451_Run(void) {
       FMSTR1_Poll();
       FMSTR1_Recorder();
           
-      AccelX = xyz[0];
-      AccelY = xyz[1];
-      AccelZ = xyz[2];
+      //AccelX = xyz[0];
+      //AccelY = xyz[1];
+      //AccelZ = xyz[2];
+      
+      AccelX = xMSB;
+      AccelY = yMSB;
+      AccelZ = zMSB;
+      aOutputRangeByte = rangeByte;
+      
       /*END OF CODE FOR FREEMASTER*/
     
     }
