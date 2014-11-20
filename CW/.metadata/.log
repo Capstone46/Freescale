@@ -1,0 +1,45 @@
+!SESSION 2014-11-20 12:34:04.243 -----------------------------------------------
+eclipse.buildId=I20070613-1755
+java.version=1.6.0_15
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2014-11-20 12:34:28.964
+!MESSAGE NLS missing message: ContentTypes_errorDialogAlreadyExists in: org.eclipse.ui.internal.messages
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2014-11-20 12:34:34.684
+!MESSAGE Environment Variable Dependency not resolved for 'ARMGNUDirEnv'.
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2014-11-20 12:34:34.700
+!MESSAGE Environment Variable Dependency not resolved for 'ARMSummonDirEnv'.
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2014-11-20 12:34:34.700
+!MESSAGE Environment Variable Dependency not resolved for 'ARMYagartoDirEnv'.
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2014-11-20 12:34:34.700
+!MESSAGE Environment Variable Dependency not resolved for 'ARMdevkitProDirEnv'.
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2014-11-20 12:34:35.372
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6 SE\eclipse\../MCU/lib/wizard_data/mqx/4.0/cf' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2014-11-20 12:34:35.372
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6 SE\eclipse\../MCU/lib/wizard_data/mqx/4.0/ppc' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2014-11-20 12:34:35.372
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6 SE\eclipse\../MCU/lib/wizard_data/mqx/4.0/patches' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2014-11-20 12:34:35.731
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6 SE\eclipse\../MCU/lib/wizard_data/mqx/4.1/cf' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2014-11-20 12:34:35.731
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6 SE\eclipse\../MCU/lib/wizard_data/mqx/4.1/ppc' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2014-11-20 12:34:35.731
+!MESSAGE External elements location 'C:\Freescale\CW MCU v10.6 SE\eclipse\../MCU/lib/wizard_data/mqx/4.1/patches' does not exist
+
+!ENTRY com.freescale.processorexpert.core 1 0 2014-11-20 12:34:37.633
+!MESSAGE Plugin com.freescale.processorexpert.core.service ProcessorExpertServiceProvider
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-11-20 12:35:31.136
+!MESSAGE Indexed 'GitHubGuyKL46Project' (30 sources, 82 headers) in 5.19 sec: 2,763 declarations; 9,803 references; 0 unresolved inclusions; 20 syntax errors; 6 unresolved names (0.05%)
