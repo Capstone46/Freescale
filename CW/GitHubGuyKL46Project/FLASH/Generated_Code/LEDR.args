@@ -4,12 +4,12 @@
 -g3
 -gdwarf-2
 -gstrict-dwarf
--I"C:/Users/nicho_000/workspace/GitHubGuyKL46Project/Project_Headers"
--I"C:/Users/nicho_000/workspace/GitHubGuyKL46Project/Project_Settings/Startup_Code"
+-I"C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Project_Headers"
+-I"C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Project_Settings/Startup_Code"
 -I"C:/Freescale/CW MCU v10.6 SE/MCU/ARM_GCC_Support/ewl/EWL_C/include"
 -I"C:/Freescale/CW MCU v10.6 SE/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
--I"C:/Users/nicho_000/workspace/GitHubGuyKL46Project/Generated_Code"
--I"C:/Users/nicho_000/workspace/GitHubGuyKL46Project/Sources"
+-I"C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code"
+-I"C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Sources"
 -I"C:/Freescale/CW MCU v10.6 SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc"
 -I"C:/Freescale/CW MCU v10.6 SE/MCU/ProcessorExpert/lib/Kinetis/iofiles"
 -O0

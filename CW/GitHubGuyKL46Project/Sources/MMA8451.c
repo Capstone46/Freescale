@@ -86,7 +86,8 @@ void MMA8451_Run(void) {
   if (res==ERR_OK) {
     for(;;) {
       res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xyz, 3);
-              
+       
+     /* START OF CODE FOR BLINKING THING*/ 
      /* if (xyz[2] < -115 || xyz[2] > 115 || xyz[1] < -115 || xyz[1] > 115 || xyz[0] < -115 || xyz[0] > 115) {
     	  
     	  LEDG_Neg();
@@ -102,14 +103,18 @@ void MMA8451_Run(void) {
     	  LEDG_Neg();
       
       }*/
-    
+      /*END OF CODE FOR BLINKING THING*/
+      
+      
+      /*START OF CODE FOR FREEMASTER*/
       FMSTR1_Poll();
       FMSTR1_Recorder();
           
       AccelX = xyz[0];
       AccelY = xyz[1];
       AccelZ = xyz[2];
-      
+      /*END OF CODE FOR FREEMASTER*/
+    
     }
   }
   
