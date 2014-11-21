@@ -8,9 +8,6 @@
 #include "MMA8451.h"
 #include "I2C2.h"
 #include "FMSTR1.h"
-//#include "LED1.h"
-//#include "LED2.h"
-//#include "LED3.h"
  
 /* External 3-axis accelerometer control register addresses */
 #define MMA8451_CTRL_REG_1 0x2A
@@ -72,7 +69,7 @@ uint8_t MMA8451_WriteReg(uint8_t addr, uint8_t val) {
   return ERR_OK;
 }
 
-static int8_t xyz[3];
+//static int8_t xyz[3];
 static int8_t xMSB;
 static int8_t yMSB;
 static int8_t zMSB;
@@ -96,10 +93,9 @@ void MMA8451_Run(void) {
   */
   res = MMA8451_WriteReg(MMA8451_XYZ_DATA_CFG, MMA8451_8gMODE);
   res = MMA8451_WriteReg(MMA8451_CTRL_REG_1,  MMA8451_F_READ_BIT_MASK|MMA8451_ACTIVE_BIT_MASK);
-  res = MMA8451_WriteReg(MMA8451_XYZ_DATA_CFG, MMA8451_8gMODE);
+  
   if (res==ERR_OK) {
     for(;;) {
-      
     	
      //res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xyz, 3);
        
@@ -112,7 +108,8 @@ void MMA8451_Run(void) {
     	res = MMA8451_ReadReg(MMA8451_XYZ_DATA_CFG, (uint8_t*)&rangeByte, 1);
       
      /* START OF CODE FOR BLINKING THING*/ 
-     /* if (xyz[2] < -115 || xyz[2] > 115 || xyz[1] < -115 || xyz[1] > 115 || xyz[0] < -115 || xyz[0] > 115) {
+     /*
+    	if (AccelX < -70 || AccelX > 70 || AccelY < -70 || AccelY > 70 || AccelZ < -70 || AccelZ > 70) {
     	  
     	  LEDG_Neg();
     	  WAIT1_Waitms(500);
@@ -126,18 +123,15 @@ void MMA8451_Run(void) {
     	  if(count >=25) count = 0;
     	  LEDG_Neg();
       
-      }*/
+      }
+      */
       /*END OF CODE FOR BLINKING THING*/
       
       
       /*START OF CODE FOR FREEMASTER*/
       FMSTR1_Poll();
       FMSTR1_Recorder();
-          
-      //AccelX = xyz[0];
-      //AccelY = xyz[1];
-      //AccelZ = xyz[2];
-      
+               
       AccelX = xMSB;
       AccelY = yMSB;
       AccelZ = zMSB;
@@ -148,7 +142,7 @@ void MMA8451_Run(void) {
     }
   }
   
-  I2C2_Deinit(deviceData.handle); //*****!!!!!!ORIGINALLY Deinit????
+  I2C2_Deinit(deviceData.handle); 
   LEDR_Off();
   LEDG_Off();
  }
