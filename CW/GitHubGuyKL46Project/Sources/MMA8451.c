@@ -8,6 +8,7 @@
 #include "MMA8451.h"
 #include "I2C2.h"
 #include "FMSTR1.h"
+#include <stdlib.h>
  
 /* External 3-axis accelerometer control register addresses */
 #define MMA8451_CTRL_REG_1 0x2A
@@ -26,13 +27,20 @@
 #define MMA8451_2gMODE 0x00
 #define MMA8451_4gMODE 0x01
 #define MMA8451_8gMODE 0x02
-
+#define UPLIM	15000
 
 static MMA8451_TDataState deviceData;
  
 
 int8_t AccelX, AccelY, AccelZ;
 uint8_t aOutputRangeByte;
+uint16_t vectorSum = 0;
+uint16_t vectorSumDataStreamOut = 0;
+uint16_t vectorSumData[UPLIM];
+uint16_t counter = 0;
+uint16_t loopcounter = 0;
+uint16_t ndcounter = 0;
+
 
 uint8_t MMA8451_ReadReg(uint8_t addr, uint8_t *data, short dataSize) {
   uint8_t res;
@@ -76,16 +84,16 @@ static int8_t zMSB;
 static int8_t xLSB;
 static int8_t yLSB;
 static int8_t zLSB;
-static int32_t count;
-static int32_t loopcount;
+//static int32_t count;
+//static int32_t loopcount;
 
 static uint8_t rangeByte;
 
 void MMA8451_Run(void) {
   uint8_t res;
- 
-  count = 0;
-  loopcount = 0;
+    
+  //count = 0;
+  //loopcount = 0;
   
   deviceData.handle = I2C2_Init(&deviceData);
   /* F_READ: Fast read mode, data format limited to single byte (auto increment counter will skip LSB)
@@ -137,9 +145,38 @@ void MMA8451_Run(void) {
       AccelZ = zMSB;
       aOutputRangeByte = rangeByte;
       
+      
+      vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));
+      
+      if (counter < UPLIM){
+    	  loopcounter++;
+      
+      	  if (loopcounter == 5){
+    	  
+      		  vectorSumData[counter] = vectorSum;
+      		  counter++;
+      		  loopcounter = 0;
+    	  
+      	  }
+      }
+      
+    if(counter >= UPLIM && ndcounter < UPLIM){
+    	  vectorSumDataStreamOut = vectorSumData[ndcounter];
+    	  ndcounter++;
+    	  WAIT1_Waitms(1);
+         
+    }
+       
+      
+      
       /*END OF CODE FOR FREEMASTER*/
     
     }
+    
+
+    
+    
+    
   }
   
   I2C2_Deinit(deviceData.handle); 
