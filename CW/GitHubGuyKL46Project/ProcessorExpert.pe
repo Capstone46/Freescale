@@ -3,8 +3,8 @@
   <Header>
     <Name>GitHubGuyKL46Project</Name>
     <SavedBy>nicho_000</SavedBy>
-    <ModificationStamp>21</ModificationStamp>
-    <Date>2014-11-21</Date>
+    <ModificationStamp>26</ModificationStamp>
+    <Date>2014-11-22</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.0.RT6_b1411-0406</PEversion>
   </Header>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>42</ProjectCompNumb>
+    <ProjectCompNumb>52</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>

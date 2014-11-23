@@ -781,8 +781,8 @@ PE_DEBUGHALT();
             </group>
             <group name="Initialization">
               <Send_break v="Disabled" />
-              <Enable_transmitter v="Enabled" />
-              <Enable_receiver v="Enabled" />
+              <Enable_transmitter v="Disabled" />
+              <Enable_receiver v="Disabled" />
               <Call_Init_method v="yes" />
             </group>
           </Properties>

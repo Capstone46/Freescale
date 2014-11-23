@@ -44,13 +44,15 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfggen.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_tsa.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h \
  ../Sources/MMA8451.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_LDD.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/I2C2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/LEDR.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/LEDG.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h
 
 C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -142,6 +144,8 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
 
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h:
+
 ../Sources/MMA8451.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_LDD.h:
@@ -155,3 +159,5 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h:
+
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h:

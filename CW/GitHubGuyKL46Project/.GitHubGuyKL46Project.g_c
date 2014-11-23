@@ -18,7 +18,7 @@
         <Line>PE_Const</Line>
         <Line>IO_Map</Line>
       </GenSharedModules>
-      <ShrdHeaderAge0>1165063364</ShrdHeaderAge0>
+      <ShrdHeaderAge0>1165400730</ShrdHeaderAge0>
       <ShrdCodeAge0>-1</ShrdCodeAge0>
       <ShrdAsemblAge0>-1</ShrdAsemblAge0>
       <ShrdHeaderAge1>1165063364</ShrdHeaderAge1>
@@ -30,7 +30,7 @@
       <ShrdHeaderAge3>1165063364</ShrdHeaderAge3>
       <ShrdCodeAge3>-1</ShrdCodeAge3>
       <ShrdAsemblAge3>-1</ShrdAsemblAge3>
-      <GenExtraFiles lines_count="33">
+      <GenExtraFiles lines_count="34">
         <Line>Documentation\doxygen\I2C2.txt</Line>
         <Line>Documentation\doxygen\BitIoLdd1.txt</Line>
         <Line>Documentation\doxygen\BitIoLdd2.txt</Line>
@@ -55,6 +55,7 @@
         <Line>Generated_Code\freemaster_Kxx.c</Line>
         <Line>Generated_Code\freemaster_Kxx.h</Line>
         <Line>Generated_Code\freemaster.h</Line>
+        <Line>Documentation\doxygen\Bit1.txt</Line>
         <Line>Documentation\doxygen\GitHubGuyKL46Project.txt</Line>
         <Line>Documentation\doxygen\RoutingReport.txt</Line>
         <Line>Documentation\doxygen\pex.doxyfile</Line>
@@ -65,7 +66,7 @@
         <Line>Project_Settings\Linker_Files\ProcessorExpert.ld</Line>
         <Line>Generated_Code\Vectors.c</Line>
       </GenExtraFiles>
-      <GenExtraFileSrcDir27>lib\doxygen\</GenExtraFileSrcDir27>
+      <GenExtraFileSrcDir28>lib\doxygen\</GenExtraFileSrcDir28>
       <XtraAge4>1165126404</XtraAge4>
       <XtraAge5>1165126404</XtraAge5>
       <XtraAge6>1165126496</XtraAge6>
@@ -86,15 +87,16 @@
       <XtraAge21>1165126404</XtraAge21>
       <XtraAge22>1165126404</XtraAge22>
       <XtraAge23>1165126404</XtraAge23>
-      <XtraAge29>1165063364</XtraAge29>
-      <XtraAge30>1165126404</XtraAge30>
-      <XtraAge32>1165126404</XtraAge32>
+      <XtraAge30>1165400730</XtraAge30>
+      <XtraAge31>1165400730</XtraAge31>
+      <XtraAge33>1165400730</XtraAge33>
+      <GenExtraFileType33>4</GenExtraFileType33>
       <GenExtraFileType32>4</GenExtraFileType32>
       <GenExtraFileType31>4</GenExtraFileType31>
       <GenExtraFileType30>4</GenExtraFileType30>
       <GenExtraFileType29>4</GenExtraFileType29>
-      <GenExtraFileType28>4</GenExtraFileType28>
-      <GenExtraFileType27>5</GenExtraFileType27>
+      <GenExtraFileType28>5</GenExtraFileType28>
+      <GenExtraFileType27>4</GenExtraFileType27>
       <GenExtraFileType26>4</GenExtraFileType26>
       <GenExtraFileType25>4</GenExtraFileType25>
       <GenExtraFileType24>4</GenExtraFileType24>
@@ -156,7 +158,8 @@
         <Line>I2C2_OnMasterBlockReceived</Line>
         <Line>Cpu_OnNMIINT</Line>
       </GenMethodsInEvents>
-      <GenAllModules lines_count="16">
+      <GenAllModules lines_count="17">
+        <Line>Bit1</Line>
         <Line>BitIoLdd1</Line>
         <Line>BitIoLdd2</Line>
         <Line>Cpu</Line>
@@ -175,7 +178,7 @@
         <Line>WAIT1</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="10">
+      <GenBeanModules lines_count="11">
         <Line>I2C2</Line>
         <Line>LEDR</Line>
         <Line>LEDpin1</Line>
@@ -186,11 +189,12 @@
         <Line>WAIT1</Line>
         <Line>FMSTR1</Line>
         <Line>UART0</Line>
+        <Line>Bit1</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile>Documentation\GitHubGuyKL46Project_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>22</ProjectModificationStamp>
+    <ProjectModificationStamp>25</ProjectModificationStamp>
   </Options>
   <CpuID_27>
     <Generated>true</Generated>
@@ -199,7 +203,7 @@
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1165063364</HeaderAge>
-    <CodeAge>1165126404</CodeAge>
+    <CodeAge>1165400730</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>11</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
@@ -1447,6 +1451,65 @@
       <ExtraFile0>Documentation\doxygen\UART0.txt</ExtraFile0>
     </InhrCompID_37>
   </ComponentID_35>
+  <ComponentID_51>
+    <Generated>true</Generated>
+    <GenCompName>Bit1</GenCompName>
+    <GenComponentVersion>01.033</GenComponentVersion>
+    <GenDriverVersion>01.03</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1165400730</HeaderAge>
+    <CodeAge>1165400730</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>13</GenNumMethods>
+    <Init>true</Init>
+    <Deinit>false</Deinit>
+    <GetDir>false</GetDir>
+    <SetDir>false</SetDir>
+    <SetInput>false</SetInput>
+    <SetOutput>false</SetOutput>
+    <GetVal>true</GetVal>
+    <PutVal>false</PutVal>
+    <ClrVal>false</ClrVal>
+    <SetVal>false</SetVal>
+    <NegVal>false</NegVal>
+    <ConnectPin>false</ConnectPin>
+    <GetRawVal>false</GetRawVal>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>4</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>Init</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>113</LineBeg>
+      <LineEnd>136</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos1>GetVal</MethodPos1>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>137</LineBeg>
+      <LineEnd>158</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos2>Init</MethodPos2>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>92</LineBeg>
+      <LineEnd>138</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos3>GetVal</MethodPos3>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>139</LineBeg>
+      <LineEnd>167</LineEnd>
+    </MethodPos>
+    <GenExtraFilesCount>1</GenExtraFilesCount>
+    <ExtraFile0>Documentation\doxygen\Bit1.txt</ExtraFile0>
+  </ComponentID_51>
   <UsedSrcFiles>
     <SrcFile0>Drivers\Common\CheckRegBits8_Rst.prg=1116866294</SrcFile0>
     <SrcFile1>Drivers\I2C_LDD.src=1116866294</SrcFile1>

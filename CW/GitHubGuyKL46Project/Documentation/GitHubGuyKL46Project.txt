@@ -84,6 +84,15 @@ Module "FMSTR1"    (component FreeMaster)
                 are any data to be returned back to the PC.  This method is enabled only if the Application command property is 
                 enabled.
 
+Module "Bit1"      (component BitIO_LDD)
+   - Bit1_Init -Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets 
+                interrupt priority, sets pin routing, sets timing, etc. If the "Enable in init. code" is set to "yes" value 
+                then the device is also enabled(see the description of the Enable() method). In this case the Enable() method 
+                is not necessary and needn't to be generated.
+   - Bit1_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
+                returned. If the direction is [output] then the last written value is read and returned (see <Safe mode> 
+                property for limitations). This method cannot be disabled if direction is [input].
+
 Module "Cpu"       (component MKL46Z256LL4)
 
 ===================================================================================

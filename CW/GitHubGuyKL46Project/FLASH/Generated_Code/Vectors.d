@@ -23,7 +23,7 @@ Generated_Code/Vectors.o: ../Generated_Code/Vectors.c \
  ../Generated_Code/FMSTR1.h ../Generated_Code/UART0.h \
  ../Generated_Code/freemaster.h ../Generated_Code/freemaster_defcfg.h \
  ../Generated_Code/freemaster_cfg.h ../Generated_Code/freemaster_cfggen.h \
- ../Generated_Code/freemaster_tsa.h \
+ ../Generated_Code/freemaster_tsa.h ../Generated_Code/Bit1.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Sources/Events.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_Types.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_Error.h \
@@ -38,7 +38,8 @@ Generated_Code/Vectors.o: ../Generated_Code/Vectors.c \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h
 
 C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -108,6 +109,8 @@ C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Type
 
 ../Generated_Code/freemaster_tsa.h:
 
+../Generated_Code/Bit1.h:
+
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Sources/Events.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_Types.h:
@@ -137,3 +140,5 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
+
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h:
