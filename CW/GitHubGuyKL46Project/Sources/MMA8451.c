@@ -9,7 +9,11 @@
 #include "I2C2.h"
 #include "FMSTR1.h"
 #include <stdlib.h>
- 
+#include "SW1.h"
+#include "PTC.h"
+#include "BitIoLdd3.h" 
+
+
 /* External 3-axis accelerometer control register addresses */
 #define MMA8451_CTRL_REG_1 0x2A
 /* MMA8451 3-axis accelerometer control register bit masks */
@@ -100,7 +104,7 @@ static uint8_t rangeByte;
 //MAIN FUNCTION
 void MMA8451_Run(void) {
   uint8_t res;
- 
+  PTC_Init();
   deviceData.handle = I2C2_Init(&deviceData);
   
   /* F_READ: Fast read mode, data format limited to single byte (auto increment counter will skip LSB)
@@ -126,6 +130,10 @@ void MMA8451_Run(void) {
     	res = MMA8451_ReadReg(MMA8451_CTRL_REG_1, (uint8_t*)&ctrlRegVal1, 1);
     	
     	   	
+    if(SW1_GetVal()) LEDR_On();
+    if(!SW1_GetVal()) LEDR_Off();
+    	
+    	
      /* START OF CODE FOR BLINKING THING*/ 
      /*
     	if (AccelX < -70 || AccelX > 70 || AccelY < -70 || AccelY > 70 || AccelZ < -70 || AccelZ > 70) {

@@ -32,7 +32,8 @@
 - \subpage BitIoLdd1
 - \subpage BitIoLdd2
 - \subpage UART0
-- \subpage Bit1
+- \subpage BitIoLdd3
+- \subpage PTC
 
 
 */

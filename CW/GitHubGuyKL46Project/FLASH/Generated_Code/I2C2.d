@@ -43,7 +43,10 @@ Generated_Code/I2C2.o: ../Generated_Code/I2C2.c \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfggen.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_tsa.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h \
+ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PTC.h \
  ../Generated_Code/I2C2.h \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PORT_PDD.h \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/I2C_PDD.h \
@@ -137,7 +140,13 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
 
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/Bit1.h:
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h:
+
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h:
+
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h:
+
+C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PTC.h:
 
 ../Generated_Code/I2C2.h:
 

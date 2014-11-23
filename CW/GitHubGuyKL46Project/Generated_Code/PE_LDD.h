@@ -5,7 +5,7 @@
 **     Processor   : MKL46Z256VLL4
 **     Version     : Component 01.003, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 19:20, # CodeGen: 54
+**     Date/Time   : 2014-11-22, 19:56, # CodeGen: 57
 **     Abstract    :
 **
 **     Settings    :
@@ -70,7 +70,9 @@
 #include "WAIT1.h"
 #include "FMSTR1.h"
 #include "UART0.h"
-#include "Bit1.h"
+#include "SW1.h"
+#include "BitIoLdd3.h"
+#include "PTC.h"
 
 
 /*

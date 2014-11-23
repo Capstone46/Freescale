@@ -7,7 +7,7 @@
 **     Version     : Component 01.003, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : KL46P121M48SF4RM, Rev.2, Dec 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 19:20, # CodeGen: 54
+**     Date/Time   : 2014-11-22, 19:59, # CodeGen: 59
 **     Abstract    :
 **
 **     Settings    :
@@ -70,7 +70,9 @@
 #include "WAIT1.h"
 #include "FMSTR1.h"
 #include "UART0.h"
-#include "Bit1.h"
+#include "SW1.h"
+#include "BitIoLdd3.h"
+#include "PTC.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -273,6 +275,13 @@ void PE_low_level_init(void)
   NVIC_ISER |= NVIC_ISER_SETENA(0x1000);
   /* NVIC_IPR3: PRI_12=0 */
   NVIC_IPR3 &= (uint32_t)~(uint32_t)(NVIC_IP_PRI_12(0xFF));
+  /* PORTC_PCR3: ISF=0,PE=1,PS=1 */
+  PORTC_PCR3 = (uint32_t)((PORTC_PCR3 & (uint32_t)~(uint32_t)(
+                PORT_PCR_ISF_MASK
+               )) | (uint32_t)(
+                PORT_PCR_PE_MASK |
+                PORT_PCR_PS_MASK
+               ));
   /* PORTA_PCR20: ISF=0,MUX=7 */
   PORTA_PCR20 = (uint32_t)((PORTA_PCR20 & (uint32_t)~(uint32_t)(
                  PORT_PCR_ISF_MASK
@@ -293,6 +302,10 @@ void PE_low_level_init(void)
   UART0_Init();
   /* ### FreeMaster "FMSTR1" init code ... */
   FMSTR1_Init();
+  /* ### BitIO_LDD "BitIoLdd3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)BitIoLdd3_Init(NULL);
+  /* ### Init_GPIO "PTC" init code ... */
+  PTC_Init();
   __EI();
 }
   /* Flash configuration field */

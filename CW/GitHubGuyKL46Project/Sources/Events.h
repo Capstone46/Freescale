@@ -44,7 +44,9 @@
 #include "WAIT1.h"
 #include "FMSTR1.h"
 #include "UART0.h"
-#include "Bit1.h"
+#include "SW1.h"
+#include "BitIoLdd3.h"
+#include "PTC.h"
 
 #ifdef __cplusplus
 extern "C" {
