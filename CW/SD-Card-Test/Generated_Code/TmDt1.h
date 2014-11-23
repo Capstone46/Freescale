@@ -6,17 +6,18 @@
 **     Component   : GenericTimeDate
 **     Version     : Component 01.020, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 00:57, # CodeGen: 3
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **         Software date/time module.
 **     Settings    :
 **          Component name                                 : TmDt1
 **          Tick Time (ms)                                 : 10
-**          RTOS                                           : Disabled
+**          RTOS                                           : Enabled
+**            RTOS                                         : FRTOS1
 **          Initialization                                 : Enabled
 **            Init in startup                              : yes
-**            Date                                         : 2012-07-22
-**            Time                                         : 05:51:31 pm
+**            Date                                         : 2014-11-23
+**            Time                                         : 03:15:56 am
 **     Contents    :
 **         AddTick  - void TmDt1_AddTick(void);
 **         AddTicks - void TmDt1_AddTicks(uint16_t nofTicks);
@@ -54,6 +55,7 @@
 #include "IO_Map.h"
 /* Include inherited beans */
 #include "CS1.h"
+#include "FRTOS1.h"
 #define TmDt1_PARSE_COMMAND_ENABLED  0 /* set to 1 if method ParseCommand() is present, 0 otherwise */
 
 #ifndef __BWUserType_TIMEREC

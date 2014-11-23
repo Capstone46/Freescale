@@ -1,29 +1,29 @@
 /* ###################################################################
-**     Filename    : main.c
-**     Project     : SD-Card-Test
-**     Processor   : MKL46Z256VMC4
-**     Version     : Driver 01.01
-**     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-21, 23:20, # CodeGen: 0
-**     Abstract    :
-**         Main module.
-**         This module contains user's application code.
-**     Settings    :
-**     Contents    :
-**         No public methods
-**
-** ###################################################################*/
+ **     Filename    : main.c
+ **     Project     : SD-Card-Test
+ **     Processor   : MKL46Z256VMC4
+ **     Version     : Driver 01.01
+ **     Compiler    : GNU C Compiler
+ **     Date/Time   : 2014-11-21, 23:20, # CodeGen: 0
+ **     Abstract    :
+ **         Main module.
+ **         This module contains user's application code.
+ **     Settings    :
+ **     Contents    :
+ **         No public methods
+ **
+ ** ###################################################################*/
 /*!
-** @file main.c
-** @version 01.01
-** @brief
-**         Main module.
-**         This module contains user's application code.
-*/         
+ ** @file main.c
+ ** @version 01.01
+ ** @brief
+ **         Main module.
+ **         This module contains user's application code.
+ */         
 /*!
-**  @addtogroup main_module main module documentation
-**  @{
-*/         
+ **  @addtogroup main_module main module documentation
+ **  @{
+ */         
 /* MODULE main */
 
 
@@ -47,40 +47,64 @@
 #include "IO_Map.h"
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
+//#include "FAT1.c"
+//#include "SD1.c"
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
-  /* Write your local variable definition here */
+	/* Write your local variable definition here */
 
-  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
-  PE_low_level_init();
-  /*** End of Processor Expert internal initialization.                    ***/
+	/*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
+	PE_low_level_init();
+	/*** End of Processor Expert internal initialization.                    ***/
 
-  /* Write your code here */
-  /* For example: for(;;) { } */
+	/* Write your code here */
+	/* For example: for(;;) { } */
 
-  /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
-  /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
-  #ifdef PEX_RTOS_START
-    PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
-  #endif
-  /*** End of RTOS startup code.  ***/
-  /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
-  for(;;){}
-  /*** Processor Expert end of main routine. DON'T WRITE CODE BELOW!!! ***/
+
+
+	for(;;) { 
+		static FATFS fs;
+		static FIL fp;
+		UINT bw;
+
+		FAT1_mount(&fs, 0, 0); /* mount file system */
+		if (FAT1_open(&fp, "./test.txt", FA_CREATE_ALWAYS|FA_WRITE)!=FR_OK) { /* open file, will always create it if not already on disk */
+			for(;;){} /* error! */
+		}
+		if (FAT1_write(&fp, "Hello World!", sizeof("Hello World!")-1, &bw)!=FR_OK) { /* write string to file */
+			for(;;){} /* error! */
+		}
+
+		(void)FAT1_close(&fp); /* close file */
+		FAT1_mount(NULL, 0, 0); /* unmount file system */
+
+		//FAT1_write (FIL *fp, const *void buff, UINT btw, UINT *bw);
+
+	}
+
+	/*** Don't write any code pass this line, or it will be deleted during code generation. ***/
+	/*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
+#ifdef PEX_RTOS_START
+	PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
+#endif
+	/*** End of RTOS startup code.  ***/
+	/*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
+	for(;;){}
+	/*** Processor Expert end of main routine. DON'T WRITE CODE BELOW!!! ***/
 } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
 
 /* END main */
 /*!
-** @}
-*/
+ ** @}
+ */
 /*
-** ###################################################################
-**
-**     This file was created by Processor Expert 10.3 [05.09]
-**     for the Freescale Kinetis series of microcontrollers.
-**
-** ###################################################################
-*/
+ ** ###################################################################
+ **
+ **     This file was created by Processor Expert 10.3 [05.09]
+ **     for the Freescale Kinetis series of microcontrollers.
+ **
+ ** ###################################################################
+ */

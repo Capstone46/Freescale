@@ -6,7 +6,7 @@
 **     Component   : SD_Card
 **     Version     : Component 01.169, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 18:42, # CodeGen: 6
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **         Implements interface to SD card for FatFs
 **     Settings    :
@@ -38,8 +38,7 @@
 **          System                                         : 
 **            Wait                                         : WAIT1
 **            Timeout                                      : TMOUT1
-**            RTOS                                         : Enabled
-**              RTOS                                       : FRTOS1
+**            RTOS                                         : Disabled
 **     Contents    :
 **         Init             - byte SD1_Init(void* unused);
 **         Deinit           - byte SD1_Deinit(void* unused);
@@ -89,7 +88,6 @@
 #include "SS1.h"
 #include "WAIT1.h"
 #include "TMOUT1.h"
-#include "FRTOS1.h"
 /* interface for FatFS low level disk functions */
 #include "diskio.h"
 

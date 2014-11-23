@@ -6,7 +6,7 @@
 **     Component   : FAT_FileSystem
 **     Version     : Component 01.165, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 00:57, # CodeGen: 3
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -97,6 +97,7 @@
 /* Include inherited beans */
 #include "SD1.h"
 #include "TmDt1.h"
+#include "FRTOS1.h"
 #include "UTIL1.h"
 #include "ff.h"
 #include "diskio.h"

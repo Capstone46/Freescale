@@ -6,7 +6,7 @@
 **     Component   : Timeout
 **     Version     : Component 01.029, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 00:57, # CodeGen: 3
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **
 The module implements timeout functionality. With this implementation,
@@ -14,9 +14,10 @@ it is possible to wait for a given time, and the time is counted by
 a periodic interrupt.
 **     Settings    :
 **          Component name                                 : TMOUT1
-**          Maximum counters                               : 1
+**          Maximum counters                               : 2
 **          Counter tick period (ms)                       : 10
-**          RTOS                                           : Disabled
+**          RTOS                                           : Enabled
+**            RTOS                                         : FRTOS1
 **     Contents    :
 **         GetCounter     - TMOUT1_CounterHandle TMOUT1_GetCounter(TMOUT1_CounterType nofTicks);
 **         LeaveCounter   - void TMOUT1_LeaveCounter(TMOUT1_CounterHandle handle);
@@ -52,7 +53,7 @@ a periodic interrupt.
 
 #include "TMOUT1.h"
 
-#define TMOUT1_NOF_COUNTERS  1         /* number of timeout counters available */
+#define TMOUT1_NOF_COUNTERS  2         /* number of timeout counters available */
 
 static TMOUT1_CounterType TMOUT1_Counters[TMOUT1_NOF_COUNTERS]; /* array of timeout counters */
 static bool TMOUT1_FreeCounters[TMOUT1_NOF_COUNTERS]; /* array to indicate which counters are free */

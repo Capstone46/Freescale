@@ -486,7 +486,44 @@ PE_DEBUGHALT();
         </boolgroup>
         <boolgroup name="SPI Read/Write Macros" v="Disabled" />
         <Activate_SPI_bus v="no" />
-        <boolgroup name="Slave Select" v="Disabled" />
+        <boolgroup name="Slave Select" v="Enabled">
+          <boolgroup name="LDD SS" v="Enabled">
+            <inhrbean type="BitIO_LDD">
+              <Enabled v="Y" />
+              <Template v="LDDSS" />
+              <Properties>
+                <Component_name v="SS1" />
+                <Pin_for_I_O v="LCD_P10/PTB10/SPI1_PCS0" />
+                <Direction v="Output" />
+                <group name="Initialization">
+                  <Init__direction v="Output" />
+                  <Init__value v="0" />
+                  <Auto_initialization v="yes" />
+                </group>
+                <Safe_mode v="no" />
+              </Properties>
+              <Methods>
+                <Init v="generate code" />
+                <Deinit v="generate code" />
+                <GetDir v="don&amp;apos;t generate code" />
+                <SetDir v="don&amp;apos;t generate code" />
+                <SetInput v="don&amp;apos;t generate code" />
+                <SetOutput v="don&amp;apos;t generate code" />
+                <GetVal v="generate code" />
+                <PutVal v="generate code" />
+                <ClrVal v="generate code" />
+                <SetVal v="generate code" />
+                <NegVal v="don&amp;apos;t generate code" />
+                <ConnectPin v="don&amp;apos;t generate code" />
+                <GetRawVal v="don&amp;apos;t generate code" />
+              </Methods>
+              <Events>
+                <EmptySection_DummyValue />
+              </Events>
+            </inhrbean>
+          </boolgroup>
+          <boolgroup name="non-LDD SS" v="Disabled" />
+        </boolgroup>
         <boolgroup name="Activate" v="Disabled" />
         <boolgroup name="Card detection" v="Disabled" />
         <Report__Card_present__if_no_Card_detection_pin v="yes" />

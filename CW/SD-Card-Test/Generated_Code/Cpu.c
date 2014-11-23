@@ -7,7 +7,7 @@
 **     Version     : Component 01.002, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : KL46P121M48SF4RM, Rev.2, Dec 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 18:42, # CodeGen: 6
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -274,14 +274,14 @@ void PE_low_level_init(void)
   /* ### SPIMaster_LDD "SM1" component auto initializatation. Auto initialization feature can be disabled by component's property "Auto initialization". */
   (void)SM1_Init(NULL);
   /* ### CriticalSection "CS1" init code ... */
-  /* ### Timeout "TMOUT1" init code ... */
-  TMOUT1_Init();
   /* ### FreeRTOS "FRTOS1" init code ... */
 #if configSYSTICK_USE_LOW_POWER_TIMER
   /* enable clocking for low power timer, otherwise vPortStopTickTimer() will crash */
   SIM_PDD_SetClockGate(SIM_BASE_PTR, SIM_PDD_CLOCK_GATE_LPTMR0, PDD_ENABLE);
 #endif
   vPortStopTickTimer(); /* tick timer shall not run until the RTOS scheduler is started */
+  /* ### Timeout "TMOUT1" init code ... */
+  TMOUT1_Init();
   /* ### BitIO_LDD "SS1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)SS1_Init(NULL);
   /* ### SD_Card "SD1" init code ... */

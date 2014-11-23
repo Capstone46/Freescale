@@ -6,7 +6,7 @@
 **     Component   : FAT_FileSystem
 **     Version     : Component 01.165, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 00:57, # CodeGen: 3
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -160,11 +160,13 @@ DRESULT disk_ioctl (
 #if _USE_LFN  /* Unicode - OEM code conversion */
 #if _USE_LFN == 3   /* Memory functions */
 void *ff_memalloc(UINT size) { /* Allocate memory block */
-  #error "No RTOS defined?"
+  /* FreeRTOS */
+  return FRTOS1_pvPortMalloc(size);
 }
 
 void ff_memfree (void* ptr) {  /* Free memory block */
-  #error "No RTOS defined?"
+  /* FreeRTOS */
+  FRTOS1_vPortFree(ptr);
 }
 #endif
 #endif
@@ -181,12 +183,8 @@ void ff_memfree (void* ptr) {  /* Free memory block */
 */
 int ff_cre_syncobj(uint8_t vol, _SYNC_t *sobj) {
   (void)vol; /* argument not used */
-  /* _FS_REENTRANT enabled, no RTOS enabled, and you don't want to provide your own sync method.
-     That means that you cannot have parallel access to the file system object.
-     If you have parallel access to the memory bus, you need to handle this from the memory component.
-   */
-  (void)sobj;
-  return TRUE;
+  *sobj = FRTOS1_xSemaphoreCreateMutex(); /* create semaphore */
+  return (*sobj != NULL) ? TRUE : FALSE;
 }
 
 /*!
@@ -198,12 +196,8 @@ int ff_cre_syncobj(uint8_t vol, _SYNC_t *sobj) {
 * \return TRUE: Function succeeded, FALSE: Could not create due to any error
 */
 int ff_del_syncobj(_SYNC_t sobj) {
-  /* _FS_REENTRANT enabled, no RTOS enabled, and you don't want to provide your own sync method.
-     That means that you cannot have parallel access to the file system object.
-     If you have parallel access to the memory bus, you need to handle this from the memory component.
-   */
-  (void)sobj; /* unused parameter */
-  return TRUE;
+  FRTOS1_vQueueDelete(sobj); /* FreeRTOS: free up memory for semaphore */
+  return TRUE; /* everything ok */
 }
 
 /*!
@@ -214,12 +208,11 @@ int ff_del_syncobj(_SYNC_t sobj) {
 * \return TRUE: Function succeeded, FALSE: Could not create due to any error
 */
 int ff_req_grant (_SYNC_t sobj) {
-  /* _FS_REENTRANT enabled, no RTOS enabled, and you don't want to provide your own sync method.
-     That means that you cannot have parallel access to the file system object.
-     If you have parallel access to the memory bus, you need to handle this from the memory component.
-   */
-  (void)sobj; /* unused parameter */
-  return TRUE; /* success */
+  if (FRTOS1_xSemaphoreTake(sobj, _FS_TIMEOUT) == pdTRUE) {
+    return TRUE; /* success */
+  } else {  /* failed to get the sync object? */
+    return FALSE; /* failure */
+  }
 }
 
 /*!
@@ -228,11 +221,7 @@ int ff_req_grant (_SYNC_t sobj) {
 * \param[in] sobj Sync object to be signaled
 */
 void ff_rel_grant (_SYNC_t sobj) {
-  /* _FS_REENTRANT enabled, no RTOS enabled, and you don't want to provide your own sync method.
-     That means that you cannot have parallel access to the file system object.
-     If you have parallel access to the memory bus, you need to handle this from the memory component.
-   */
-  (void)sobj; /* unused parameter */
+  (void)FRTOS1_xSemaphoreGive(sobj); /* FreeRTOS */
 }
 #endif /* _FS_REENTRANT */
 

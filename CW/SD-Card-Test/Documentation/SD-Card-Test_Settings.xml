@@ -400,7 +400,15 @@ PE_DEBUGHALT();
           <Realtime_clock v="TmDt1" />
         </boolgroup>
       </boolgroup>
-      <boolgroup name="Reentrant" v="Disabled" />
+      <boolgroup name="Reentrant" v="Enabled">
+        <Timeout_ticks v="1000" />
+        <Handle v="HANDLE" />
+        <User_Sync_Functions v="no" />
+        <boolgroup name="RTOS" v="Enabled">
+          <RTOS v="FRTOS1" />
+          <Use_dynamic_heap v="yes" />
+        </boolgroup>
+      </boolgroup>
       <Utility v="UTIL1" />
       <boolgroup name="Shell" v="Disabled" />
     </Properties>
@@ -532,9 +540,7 @@ PE_DEBUGHALT();
       <group name="System">
         <Wait v="WAIT1" />
         <Timeout v="TMOUT1" />
-        <boolgroup name="RTOS" v="Enabled">
-          <RTOS v="FRTOS1" />
-        </boolgroup>
+        <boolgroup name="RTOS" v="Disabled" />
       </group>
     </Properties>
     <Methods>
@@ -566,12 +572,14 @@ PE_DEBUGHALT();
       <Component_name v="TmDt1" />
       <Critical_Section v="CS1" />
       <Tick_Time__ms_ v="10" />
-      <boolgroup name="RTOS" v="Disabled" />
+      <boolgroup name="RTOS" v="Enabled">
+        <RTOS v="FRTOS1" />
+      </boolgroup>
       <boolgroup name="Shell" v="Disabled" />
       <boolgroup name="Initialization" v="Enabled">
         <Init_in_startup v="yes" />
-        <Date v="2012-07-22" />
-        <Time v="05:51:31 pm" />
+        <Date v="2014-11-23" />
+        <Time v="03:15:56 am" />
       </boolgroup>
     </Properties>
     <Methods>
@@ -799,9 +807,11 @@ PE_DEBUGHALT();
     <Properties>
       <Component_name v="TMOUT1" />
       <Critical_Section v="CS1" />
-      <Maximum_counters v="1" />
+      <Maximum_counters v="2" />
       <Counter_tick_period__ms_ v="10" />
-      <boolgroup name="RTOS" v="Disabled" />
+      <boolgroup name="RTOS" v="Enabled">
+        <RTOS v="FRTOS1" />
+      </boolgroup>
     </Properties>
     <Methods>
       <GetCounter v="generate code" />

@@ -6,17 +6,18 @@
 **     Component   : GenericTimeDate
 **     Version     : Component 01.020, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 00:57, # CodeGen: 3
+**     Date/Time   : 2014-11-23, 03:19, # CodeGen: 8
 **     Abstract    :
 **         Software date/time module.
 **     Settings    :
 **          Component name                                 : TmDt1
 **          Tick Time (ms)                                 : 10
-**          RTOS                                           : Disabled
+**          RTOS                                           : Enabled
+**            RTOS                                         : FRTOS1
 **          Initialization                                 : Enabled
 **            Init in startup                              : yes
-**            Date                                         : 2012-07-22
-**            Time                                         : 05:51:31 pm
+**            Date                                         : 2014-11-23
+**            Time                                         : 03:15:56 am
 **     Contents    :
 **         AddTick  - void TmDt1_AddTick(void);
 **         AddTicks - void TmDt1_AddTicks(uint16_t nofTicks);
@@ -47,7 +48,7 @@
 #include "TmDt1.h"
 
 #define TmDt1_TICK_TIME_MS \
-  10                                    /* Period in milliseconds as defined in component properties, at which TmDt1._AddTick() is called */
+  (1000/100)                            /* Period in milliseconds as defined in RTOS component properties, at which TmDt1._AddTick() is called */
 #if TmDt1_TICK_TIME_MS==0
   #error "Tick period cannot be zero!"
 #endif
@@ -265,8 +266,8 @@ uint8_t TmDt1_GetDate(DATEREC *Date)
 void TmDt1_Init(void)
 {
   /* initialize date/time as set in properties */
-  (void)TmDt1_SetTime(17, 51, 31, 0);
-  (void)TmDt1_SetDate(2012, 7, 22);
+  (void)TmDt1_SetTime(3, 15, 56, 0);
+  (void)TmDt1_SetDate(2014, 11, 23);
 }
 
 /*
