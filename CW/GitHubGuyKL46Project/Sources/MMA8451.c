@@ -13,6 +13,8 @@
 #include "PTC.h"
 #include "BitIoLdd3.h" 
 
+//value to delay output by so its easier to see in freemaster
+#define OUTPUTDELAY 5
 
 /* External 3-axis accelerometer control register addresses */
 #define MMA8451_CTRL_REG_1 0x2A
@@ -36,7 +38,7 @@
 #define MMA8451_4gMODE 0x01
 #define MMA8451_8gMODE 0x02
 
-// Max number of samples to record to SRAM
+// Max number of samples to record to SRAM max 15000
 #define UPLIM	15000
 
 // Something from the tutorial
@@ -44,17 +46,18 @@ static MMA8451_TDataState deviceData;
 
 // Capstone 46 variables
 int8_t AccelX, AccelY, AccelZ;
-uint8_t aOutputRangeByte;
-uint8_t ctrlRegVal1;
-uint8_t ctrlRegVal2;
-uint8_t sysModeReg;
 uint16_t vectorSum = 0;
 uint16_t vectorSumDataStreamOut = 0;
 uint16_t vectorSumData[UPLIM];
 uint16_t counter = 0;
 uint16_t loopcounter = 0;
 uint16_t ndcounter = 0;
-uint8_t zzzzDIR;
+uint8_t currentState = 0;
+
+//Capstone 46 variables
+static int8_t xMSB;
+static int8_t yMSB;
+static int8_t zMSB;
 
 
 uint8_t MMA8451_ReadReg(uint8_t addr, uint8_t *data, short dataSize) {
@@ -92,27 +95,30 @@ uint8_t MMA8451_WriteReg(uint8_t addr, uint8_t val) {
   return ERR_OK;
 }
 
-//Capstone 46 variables
-static int8_t xMSB;
-static int8_t yMSB;
-static int8_t zMSB;
-static int8_t xLSB;
-static int8_t yLSB;
-static int8_t zLSB;
-static uint8_t rangeByte;
 
 //MAIN FUNCTION
 void MMA8451_Run(void) {
+	
+  //Error checking variable	
   uint8_t res;
+  //sampling delay counter
+  uint8_t delayCounter = 0;
+  
+  //Initialize pull up on SW1
   PTC_Init();
+  
+  //Initialize accelerometer I2C
   deviceData.handle = I2C2_Init(&deviceData);
   
-  /* F_READ: Fast read mode, data format limited to single byte (auto increment counter will skip LSB)
-  * ACTIVE: Full scale selection
-  */
-  
+  //Inital LED settings
+  LEDG_On();
+  LEDR_Off();
+ 
   //Set the accelerometer to 8g mode
   res = MMA8451_WriteReg(MMA8451_XYZ_DATA_CFG, MMA8451_8gMODE);
+  /* F_READ: Fast read mode, data format limited to single byte (auto increment counter will skip LSB)
+   * ACTIVE: Full scale selection
+   */
   res = MMA8451_WriteReg(MMA8451_CTRL_REG_1,  MMA8451_F_READ_BIT_MASK|MMA8451_ACTIVE_BIT_MASK|MMA8451_NORMAL_100Hz_MASK);
    
   //MAIN LOOP
@@ -120,79 +126,77 @@ void MMA8451_Run(void) {
     for(;;) {
     	
     	//read accelerometer values
-    	res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xMSB, 1);
-    	res = MMA8451_ReadReg(MMA8451_OUT_Y_MSB, (uint8_t*)&yMSB, 1);
-    	res = MMA8451_ReadReg(MMA8451_OUT_Z_MSB, (uint8_t*)&zMSB, 1);
-    	res = MMA8451_ReadReg(MMA8451_OUT_X_LSB, (uint8_t*)&xLSB, 1);
-		res = MMA8451_ReadReg(MMA8451_OUT_Y_LSB, (uint8_t*)&yLSB, 1);
-    	res = MMA8451_ReadReg(MMA8451_OUT_Z_LSB, (uint8_t*)&zLSB, 1);
-    	res = MMA8451_ReadReg(MMA8451_XYZ_DATA_CFG, (uint8_t*)&rangeByte, 1);
-    	res = MMA8451_ReadReg(MMA8451_CTRL_REG_1, (uint8_t*)&ctrlRegVal1, 1);
-    	
-    	   	
-    if(SW1_GetVal()) LEDR_On();
-    if(!SW1_GetVal()) LEDR_Off();
-    	
-    	
-     /* START OF CODE FOR BLINKING THING*/ 
-     /*
-    	if (AccelX < -70 || AccelX > 70 || AccelY < -70 || AccelY > 70 || AccelZ < -70 || AccelZ > 70) {
-    	  
-    	  LEDG_Neg();
-    	  WAIT1_Waitms(500);
-    	  for(loopcount = 0; loopcount <= count ; loopcount++){
-    	        		LEDR_Neg();
-    	        		WAIT1_Waitms(200);
-    	        		LEDR_Neg();
-    	        		WAIT1_Waitms(200);
-    	  }
-    	  if(count < 25) count++;
-    	  if(count >=25) count = 0;
-    	  LEDG_Neg();
-      
-      }
-      */
-      /*END OF CODE FOR BLINKING THING*/
-      
-    	     
-      /*START OF CODE FOR FREEMASTER*/
-      //Functions that must be called for freemaster to work
-      FMSTR1_Poll();
-      FMSTR1_Recorder();
-      //Reading accelerometer values to the variables that freemaster looks at         
-      AccelX = xMSB;
-      AccelY = yMSB;
-      AccelZ = zMSB;
-      //reading what resolution mode the accelerometer is in     
-      aOutputRangeByte = rangeByte;
-      //calculating the vector sum of the XY and Z directions      
-      vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));
-      
-      //loop to record data
-      if (counter < UPLIM){
-    	  loopcounter++;
-       	
-    	  if (loopcounter == 5){
-    	
-      		  vectorSumData[counter] = vectorSum;
-      		  counter++;
-      		  loopcounter = 0;
-    	  
-      	  }
-      }
-      
-      //loop to replay data  
-      if(counter >= UPLIM && ndcounter < UPLIM){
-    	  vectorSumDataStreamOut = vectorSumData[ndcounter];
-    	  ndcounter++;
-    	  WAIT1_Waitms(1);
-         
-      }
-            
-      /*END OF CODE FOR FREEMASTER*/
+		res = MMA8451_ReadReg(MMA8451_OUT_X_MSB, (uint8_t*)&xMSB, 1);
+		res = MMA8451_ReadReg(MMA8451_OUT_Y_MSB, (uint8_t*)&yMSB, 1);
+		res = MMA8451_ReadReg(MMA8451_OUT_Z_MSB, (uint8_t*)&zMSB, 1);
+		//Reading accelerometer values to the variables that freemaster looks at         
+		AccelX = xMSB;
+		AccelY = yMSB;
+		AccelZ = zMSB;
+		//calculating the vector sum of the XY and Z directions      
+		
+ 
+    	//State 0: ready to record (idle)
+		if (currentState == 0){
+			if(!SW1_GetVal()) {
+				currentState  = 1;
+				LEDR_On();
+				LEDG_Off();
+			}
+		}
+		
+		//State 1: recording
+		if (currentState == 1){
+			//loop to record data
+									
+			delayCounter++;
+			if(delayCounter >= OUTPUTDELAY){
+				vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));    	
+				vectorSumData[counter] = vectorSum;
+				counter++;
+				delayCounter = 0;
+				if (counter >= UPLIM) {
+					currentState = 2;
+					counter = 0;
+					LEDR_Off();
+					LEDG_Off();
+				}
+			}
+		}
     
-    }
-        
+		//State 2: done recording (idle)
+		if (currentState == 2){
+			if(!SW1_GetVal()) {
+				currentState  = 3;
+				LEDR_On();
+				LEDG_On();
+			}
+		}
+    
+		//State 3: replaying data
+		if (currentState == 3){
+			
+			delayCounter++;
+			if(delayCounter >= OUTPUTDELAY){
+				vectorSumDataStreamOut = vectorSumData[counter];
+				counter++;
+				delayCounter = 0;
+				if(counter >= UPLIM){
+					currentState = 0;
+					vectorSum = 0;
+					vectorSumDataStreamOut = 0;
+					counter = 0;
+					LEDG_On();
+					LEDR_Off();
+				}
+			}
+		}
+    	      
+    	//Functions that must be called for freemaster to work
+		FMSTR1_Poll();
+		FMSTR1_Recorder();
+		   
+     }
   }
   
   //from tutorial
