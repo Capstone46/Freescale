@@ -3,8 +3,8 @@
   <Header>
     <Name>SD-Card-Test</Name>
     <SavedBy>Ali</SavedBy>
-    <ModificationStamp>10</ModificationStamp>
-    <Date>2014-11-23</Date>
+    <ModificationStamp>14</ModificationStamp>
+    <Date>2014-11-24</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.1.RT6_b1423-0421</PEversion>
   </Header>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>57</ProjectCompNumb>
+    <ProjectCompNumb>63</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -5692,7 +5692,7 @@
               <ItemSymbol>_Pin</ItemSymbol>
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
-              <Value>LCD_P10/PTB10/SPI1_PCS0</Value>
+              <Value>PTA14/SPI0_PCS0/UART0_TX/I2S0_RX_BCLK/I2S0_TXD0</Value>
               <SharedPrphMode>false</SharedPrphMode>
             </ItemState>
             <ItemState>
@@ -7297,7 +7297,7 @@
         <ItemSymbol>Device</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>SPI1</Value>
+        <Value>SPI0</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -7310,7 +7310,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>InpInt</ItemSymbol>
-        <Value>INT_SPI1</Value>
+        <Value>INT_SPI0</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>InpIntPriority</ItemSymbol>
@@ -7345,7 +7345,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>OutInt</ItemSymbol>
-        <Value>INT_SPI1</Value>
+        <Value>INT_SPI0</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>OutIntPriority</ItemSymbol>
@@ -7396,7 +7396,7 @@
         <ItemSymbol>Inp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>LCD_P12/TSI0_CH9/PTB16/SPI1_MOSI/UART0_RX/TPM_CLKIN0/SPI1_MISO</Value>
+        <Value>PTA17/SPI0_MISO/SPI0_MOSI/I2S0_MCLK</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -7417,7 +7417,7 @@
         <ItemSymbol>Out</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>LCD_P13/TSI0_CH10/PTB17/SPI1_MISO/UART0_TX/TPM_CLKIN1/SPI1_MOSI</Value>
+        <Value>PTA16/SPI0_MOSI/SPI0_MISO/I2S0_RX_FS/I2S0_RXD0</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -7433,7 +7433,7 @@
         <ItemSymbol>Clk</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>LCD_P45/ADC0_SE6b/PTD5/SPI1_SCK/UART2_TX/TPM0_CH5</Value>
+        <Value>PTA15/SPI0_SCK/UART0_RX/I2S0_RXD0</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -7445,7 +7445,7 @@
       <ItemState>
         <ItemSymbol>ChipSelectList</ItemSymbol>
         <ReadOnly>false</ReadOnly>
-        <ListItemCount>1</ListItemCount>
+        <ListItemCount>0</ListItemCount>
         <UserReadOnly>false</UserReadOnly>
         <Expanded>true</Expanded>
       </ItemState>
@@ -8091,7 +8091,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>InitialChipSelect</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Value>0</Value>

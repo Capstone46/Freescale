@@ -5,7 +5,7 @@
 **     Processor   : MKL46Z256VMC4
 **     Version     : Component 01.002, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 18:42, # CodeGen: 6
+**     Date/Time   : 2014-11-24, 10:22, # CodeGen: 15
 **     Abstract    :
 **
 **     Settings    :
@@ -140,10 +140,10 @@ bool PE_PeripheralUsed(uint32_t PrphBaseAddress)
   bool result = FALSE;
 
   switch (PrphBaseAddress) {
-    /* Base address allocated by peripheral(s) SPI1 */
-    case 0x40077000UL:
-    /* Base address allocated by peripheral(s) PTB */
-    case 0x400FF040UL:
+    /* Base address allocated by peripheral(s) SPI0 */
+    case 0x40076000UL:
+    /* Base address allocated by peripheral(s) PTA */
+    case 0x400FF000UL:
       result = TRUE;
       break;
     default:

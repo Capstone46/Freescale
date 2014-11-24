@@ -501,7 +501,7 @@ PE_DEBUGHALT();
               <Template v="LDDSS" />
               <Properties>
                 <Component_name v="SS1" />
-                <Pin_for_I_O v="LCD_P10/PTB10/SPI1_PCS0" />
+                <Pin_for_I_O v="PTA14/SPI0_PCS0/UART0_TX/I2S0_RX_BCLK/I2S0_TXD0" />
                 <Direction v="Output" />
                 <group name="Initialization">
                   <Init__direction v="Output" />
@@ -665,28 +665,25 @@ PE_DEBUGHALT();
     <Enabled v="Y" />
     <Properties>
       <Component_name v="SM1" />
-      <Device v="SPI1" />
+      <Device v="SPI0" />
       <boolgroup name="Interrupt service/event" v="Enabled">
-        <Input_interrupt v="INT_SPI1" />
+        <Input_interrupt v="INT_SPI0" />
         <Input_interrupt_priority v="medium priority" />
-        <Output_interrupt v="INT_SPI1" />
+        <Output_interrupt v="INT_SPI0" />
         <Output_interrupt_priority v="medium priority" />
       </boolgroup>
       <group name="Settings">
         <boolgroup name="Input pin" v="Enabled">
-          <Pin v="LCD_P12/TSI0_CH9/PTB16/SPI1_MOSI/UART0_RX/TPM_CLKIN0/SPI1_MISO" />
+          <Pin v="PTA17/SPI0_MISO/SPI0_MOSI/I2S0_MCLK" />
         </boolgroup>
         <boolgroup name="Output pin" v="Enabled">
-          <Pin v="LCD_P13/TSI0_CH10/PTB17/SPI1_MISO/UART0_TX/TPM_CLKIN1/SPI1_MOSI" />
+          <Pin v="PTA16/SPI0_MOSI/SPI0_MISO/I2S0_RX_FS/I2S0_RXD0" />
         </boolgroup>
         <group name="Clock pin">
-          <Pin v="LCD_P45/ADC0_SE6b/PTD5/SPI1_SCK/UART2_TX/TPM0_CH5" />
+          <Pin v="PTA15/SPI0_SCK/UART0_RX/I2S0_RXD0" />
         </group>
-        <list name="Chip select list" v="1">
-          <group name="Chip select 0">
-            <Pin v="LCD_P52/PTE4/SPI1_PCS0" />
-            <Active_level v="Low" />
-          </group>
+        <list name="Chip select list" v="0">
+          <EmptySection_DummyValue />
         </list>
         <list name="Attribute set list" v="2">
           <group name="Attribute set 0">

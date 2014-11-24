@@ -436,7 +436,9 @@ static void SD1_SPI_WRITE_READ(unsigned char write, unsigned char *readP) {
   SD1_DataReceivedFlag = FALSE;
   (void)SM1_ReceiveBlock(SM1_DeviceData, readP, 1);
   (void)SM1_SendBlock(SM1_DeviceData, &write, 1);
-  while(!SD1_DataReceivedFlag){}
+  int i;
+  for (i=0; i<100000; i++);
+  //while(!SD1_DataReceivedFlag){}
 }
 
 #if SD1_SPI_WRITE_READ_BLOCK_ENABLED

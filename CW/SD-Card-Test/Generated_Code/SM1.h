@@ -6,33 +6,29 @@
 **     Component   : SPIMaster_LDD
 **     Version     : Component 01.111, Driver 01.02, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 01:01, # CodeGen: 4
+**     Date/Time   : 2014-11-24, 10:22, # CodeGen: 15
 **     Abstract    :
 **         This component "SPIMaster_LDD" implements MASTER part of synchronous
 **         serial master-slave communication.
 **     Settings    :
 **          Component name                                 : SM1
-**          Device                                         : SPI1
+**          Device                                         : SPI0
 **          Interrupt service/event                        : Enabled
-**            Input interrupt                              : INT_SPI1
+**            Input interrupt                              : INT_SPI0
 **            Input interrupt priority                     : medium priority
-**            Output interrupt                             : INT_SPI1
+**            Output interrupt                             : INT_SPI0
 **            Output interrupt priority                    : medium priority
 **          Settings                                       : 
 **            Input pin                                    : Enabled
-**              Pin                                        : LCD_P12/TSI0_CH9/PTB16/SPI1_MOSI/UART0_RX/TPM_CLKIN0/SPI1_MISO
+**              Pin                                        : PTA17/SPI0_MISO/SPI0_MOSI/I2S0_MCLK
 **              Pin signal                                 : SD_MISO
 **            Output pin                                   : Enabled
-**              Pin                                        : LCD_P13/TSI0_CH10/PTB17/SPI1_MISO/UART0_TX/TPM_CLKIN1/SPI1_MOSI
+**              Pin                                        : PTA16/SPI0_MOSI/SPI0_MISO/I2S0_RX_FS/I2S0_RXD0
 **              Pin signal                                 : SD_MOSI
 **            Clock pin                                    : 
-**              Pin                                        : LCD_P45/ADC0_SE6b/PTD5/SPI1_SCK/UART2_TX/TPM0_CH5
+**              Pin                                        : PTA15/SPI0_SCK/UART0_RX/I2S0_RXD0
 **              Pin signal                                 : SD_CLK
-**            Chip select list                             : 1
-**              Chip select 0                              : 
-**                Pin                                      : LCD_P52/PTE4/SPI1_PCS0
-**                Pin signal                               : 
-**                Active level                             : Low
+**            Chip select list                             : 0
 **            Attribute set list                           : 2
 **              Attribute set 0                            : 
 **                Width                                    : 8 bits
@@ -146,7 +142,7 @@ extern "C" {
 
 
 /*! Peripheral base address of a device allocated by the component. This constant can be used directly in PDD macros. */
-#define SM1_PRPH_BASE_ADDRESS  0x40077000U
+#define SM1_PRPH_BASE_ADDRESS  0x40076000U
   
 /*! Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. */
 #define SM1_DeviceData  ((LDD_TDeviceData *)PE_LDD_GetDeviceStructure(PE_LDD_COMPONENT_SM1_ID))
@@ -162,7 +158,7 @@ extern "C" {
 #define SM1_OnBlockSent_EVENT_ENABLED  /*!< OnBlockSent event of the component SM1 is enabled (generated) */
 #define SM1_OnBlockReceived_EVENT_ENABLED /*!< OnBlockReceived event of the component SM1 is enabled (generated) */
 
-#define SM1_CHIP_SELECT_COUNT 1U       /*!< Number of chip selects */
+#define SM1_CHIP_SELECT_COUNT 0U       /*!< Number of chip selects */
 #define SM1_CONFIGURATION_COUNT 2U     /*!< Number of predefined configurations */
 
 /*

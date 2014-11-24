@@ -6,7 +6,7 @@
 **     Component   : BitIO_LDD
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-11-22, 18:42, # CodeGen: 6
+**     Date/Time   : 2014-11-24, 10:22, # CodeGen: 15
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -16,7 +16,7 @@
 **         portable to various microprocessors.
 **     Settings    :
 **          Component name                                 : SS1
-**          Pin for I/O                                    : LCD_P10/PTB10/SPI1_PCS0
+**          Pin for I/O                                    : PTA14/SPI0_PCS0/UART0_TX/I2S0_RX_BCLK/I2S0_TXD0
 **          Pin signal                                     : SD_SS
 **          Direction                                      : Output
 **          Initialization                                 : 
@@ -102,7 +102,7 @@ extern "C" {
 
 
 /*! Peripheral base address of a device allocated by the component. This constant can be used directly in PDD macros. */
-#define SS1_PRPH_BASE_ADDRESS  0x400FF040U
+#define SS1_PRPH_BASE_ADDRESS  0x400FF000U
   
 /*! Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. */
 #define SS1_DeviceData  ((LDD_TDeviceData *)PE_LDD_GetDeviceStructure(PE_LDD_COMPONENT_SS1_ID))
@@ -116,9 +116,9 @@ extern "C" {
 #define SS1_SetVal_METHOD_ENABLED      /*!< SetVal method of the component SS1 is enabled (generated) */
 
 /* Definition of implementation constants */
-#define SS1_MODULE_BASE_ADDRESS FPTB_BASE_PTR /*!< Name of macro used as the base address */
-#define SS1_PORTCONTROL_BASE_ADDRESS PORTB_BASE_PTR /*!< Name of macro used as the base address */
-#define SS1_PORT_MASK 0x0400U          /*!< Mask of the allocated pin from the port */
+#define SS1_MODULE_BASE_ADDRESS FPTA_BASE_PTR /*!< Name of macro used as the base address */
+#define SS1_PORTCONTROL_BASE_ADDRESS PORTA_BASE_PTR /*!< Name of macro used as the base address */
+#define SS1_PORT_MASK 0x4000U          /*!< Mask of the allocated pin from the port */
 
 
 

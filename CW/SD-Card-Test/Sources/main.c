@@ -63,25 +63,35 @@ int main(void)
 	/* Write your code here */
 	/* For example: for(;;) { } */
 
+	static FATFS fs;
+	static FIL fp;
 
-
+	//Initialise the SD Card
+	//SD1_Init(&fs);
+	
+	
 	for(;;) { 
-		static FATFS fs;
-		static FIL fp;
+
 		UINT bw;
 
-		FAT1_mount(&fs, 0, 0); /* mount file system */
+		//Mount file system
+		FAT1_mount(&fs, "SD1", 0); /* mount file system */
+		
+		// Create/Open a new file
 		if (FAT1_open(&fp, "./test.txt", FA_CREATE_ALWAYS|FA_WRITE)!=FR_OK) { /* open file, will always create it if not already on disk */
 			for(;;){} /* error! */
 		}
+		
+		//Write to file
 		if (FAT1_write(&fp, "Hello World!", sizeof("Hello World!")-1, &bw)!=FR_OK) { /* write string to file */
 			for(;;){} /* error! */
 		}
 
+		//Close file
 		(void)FAT1_close(&fp); /* close file */
-		FAT1_mount(NULL, 0, 0); /* unmount file system */
-
-		//FAT1_write (FIL *fp, const *void buff, UINT btw, UINT *bw);
+		
+		//Unmount file system
+		FAT1_mount(NULL, "SD1", 0); /* unmount file system */
 
 	}
 
