@@ -3,7 +3,7 @@
   <Header>
     <Name>GitHubGuyKL46Project</Name>
     <SavedBy>nicho_000</SavedBy>
-    <ModificationStamp>30</ModificationStamp>
+    <ModificationStamp>31</ModificationStamp>
     <Date>2014-11-23</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.0.RT6_b1411-0406</PEversion>
@@ -7622,7 +7622,7 @@
     <BeanType>FreeMaster</BeanType>
     <Name>FMSTR1</Name>
     <CompNumb>35</CompNumb>
-    <CompEnabled>true</CompEnabled>
+    <CompEnabled>false</CompEnabled>
     <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
     <IconName>MONITOR</IconName>
     <UserFolderName />

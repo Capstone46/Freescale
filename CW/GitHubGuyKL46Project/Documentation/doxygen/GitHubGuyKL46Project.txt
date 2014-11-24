@@ -31,7 +31,6 @@
 - \subpage I2C2
 - \subpage BitIoLdd1
 - \subpage BitIoLdd2
-- \subpage UART0
 - \subpage BitIoLdd3
 - \subpage PTC
 

@@ -35,14 +35,6 @@ Generated_Code/I2C2.o: ../Generated_Code/I2C2.c \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/LEDpin2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_defcfg.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfg.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfggen.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_tsa.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h \
@@ -123,22 +115,6 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd2.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_defcfg.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfg.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfggen.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_tsa.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h:
 

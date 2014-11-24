@@ -20,11 +20,8 @@ Generated_Code/Vectors.o: ../Generated_Code/Vectors.c \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Types.h \
  ../Generated_Code/LEDG.h ../Generated_Code/LEDpin2.h \
  ../Generated_Code/BitIoLdd2.h ../Generated_Code/WAIT1.h \
- ../Generated_Code/FMSTR1.h ../Generated_Code/UART0.h \
- ../Generated_Code/freemaster.h ../Generated_Code/freemaster_defcfg.h \
- ../Generated_Code/freemaster_cfg.h ../Generated_Code/freemaster_cfggen.h \
- ../Generated_Code/freemaster_tsa.h ../Generated_Code/SW1.h \
- ../Generated_Code/BitIoLdd3.h ../Generated_Code/PTC.h \
+ ../Generated_Code/SW1.h ../Generated_Code/BitIoLdd3.h \
+ ../Generated_Code/PTC.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Sources/Events.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_Types.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PE_Error.h \
@@ -38,8 +35,6 @@ Generated_Code/Vectors.o: ../Generated_Code/Vectors.c \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/LEDpin2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PTC.h
@@ -98,20 +93,6 @@ C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Type
 
 ../Generated_Code/WAIT1.h:
 
-../Generated_Code/FMSTR1.h:
-
-../Generated_Code/UART0.h:
-
-../Generated_Code/freemaster.h:
-
-../Generated_Code/freemaster_defcfg.h:
-
-../Generated_Code/freemaster_cfg.h:
-
-../Generated_Code/freemaster_cfggen.h:
-
-../Generated_Code/freemaster_tsa.h:
-
 ../Generated_Code/SW1.h:
 
 ../Generated_Code/BitIoLdd3.h:
@@ -143,10 +124,6 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd2.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h:
 

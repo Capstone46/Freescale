@@ -7,14 +7,15 @@
 
 #include "MMA8451.h"
 #include "I2C2.h"
-#include "FMSTR1.h"
+//#include "FMSTR1.h"
 #include <stdlib.h>
 #include "SW1.h"
 #include "PTC.h"
 #include "BitIoLdd3.h" 
 
 //value to delay output by so its easier to see in freemaster
-#define OUTPUTDELAY 5
+#define OUTPUTDELAYREC 4
+#define OUTPUTDELAYPLAYBACK 10
 
 /* External 3-axis accelerometer control register addresses */
 #define MMA8451_CTRL_REG_1 0x2A
@@ -138,6 +139,7 @@ void MMA8451_Run(void) {
  
     	//State 0: ready to record (idle)
 		if (currentState == 0){
+			vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));
 			if(!SW1_GetVal()) {
 				currentState  = 1;
 				LEDR_On();
@@ -148,10 +150,9 @@ void MMA8451_Run(void) {
 		//State 1: recording
 		if (currentState == 1){
 			//loop to record data
-									
+			vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));						
 			delayCounter++;
-			if(delayCounter >= OUTPUTDELAY){
-				vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));    	
+			if(delayCounter >= OUTPUTDELAYREC){
 				vectorSumData[counter] = vectorSum;
 				counter++;
 				delayCounter = 0;
@@ -166,6 +167,7 @@ void MMA8451_Run(void) {
     
 		//State 2: done recording (idle)
 		if (currentState == 2){
+			vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));
 			if(!SW1_GetVal()) {
 				currentState  = 3;
 				LEDR_On();
@@ -175,9 +177,9 @@ void MMA8451_Run(void) {
     
 		//State 3: replaying data
 		if (currentState == 3){
-			
+			vectorSum = (abs(AccelX) + abs(AccelY) + abs(AccelZ));
 			delayCounter++;
-			if(delayCounter >= OUTPUTDELAY){
+			if(delayCounter >= OUTPUTDELAYPLAYBACK){
 				vectorSumDataStreamOut = vectorSumData[counter];
 				counter++;
 				delayCounter = 0;
@@ -193,8 +195,8 @@ void MMA8451_Run(void) {
 		}
     	      
     	//Functions that must be called for freemaster to work
-		FMSTR1_Poll();
-		FMSTR1_Recorder();
+		//FMSTR1_Poll();
+		//FMSTR1_Recorder();
 		   
      }
   }

@@ -693,13 +693,13 @@ PE_DEBUGHALT();
     </Events>
   </Bean>
   <Bean name="FMSTR1" type="FreeMaster">
-    <Enabled v="Y" />
+    <Enabled v="N" />
     <Properties>
       <Component_name v="FMSTR1" />
       <Interrupt_mode v="Mixed interrupt and polling mode" />
       <enumgroup name="Device" v="SCI">
         <inhrbean type="Init_UART">
-          <Enabled v="Y" />
+          <Enabled v="N" />
           <Template v="Init_UART_VAR0" />
           <Properties>
             <Component_name v="UART0" />

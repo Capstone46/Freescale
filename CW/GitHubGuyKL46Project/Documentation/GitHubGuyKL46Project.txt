@@ -61,29 +61,6 @@ Module "WAIT1"     (component Wait)
    - WAIT1_WaitOSms -If an RTOS is enabled, this routine will use a non-blocking wait method. Otherwise it will do a 
                 busy/blocking wait.
 
-Module "FMSTR1"    (component FreeMaster)
-   - FMSTR1_Poll -In the poll-driven or short interrupt modes, this function handles the protocol decoding and execution. In 
-                the poll-driven mode, this function also handles the SCI communication. In the long interrupt mode, this 
-                function compiles as an empty function and may still be called.
-   - FMSTR1_Recorder -Recorder worker routine. This returns quickly if recorder is not running, otherwise it calls quite 
-                lengthy recorder routine which does all the recorder work (sampling, triggering).   This method is enabled only 
-                if the Recorder property is enabled.
-   - FMSTR1_TriggerRec -Pull the trigger of the recorder. This function starts the post-trigger stop countdown.  This method is 
-                enabled only if the Recorder property is enabled.
-   - FMSTR1_GetAppCmd -Fetch the application command code if one is ready for processing.   This method is enabled only if the 
-                Application command property is enabled.
-   - FMSTR1_GetAppCmdData -Get a pointer to application command data. This function can be used to retrieve the Application 
-                Command data, once the application determines the Application Command is pending.  This method is enabled only 
-                if the Application command property is enabled.
-   - FMSTR1_RegisterAppCmdCall -Register or unregister application command callback handler.   This method is enabled only if 
-                the Application command property is enabled.
-   - FMSTR1_AppCmdAck -This function is used when Application Command processing is finished in the application. The 
-                nResultCode passed to this function is returned back to the host and the driver is re-initialized to expect the 
-                next Application Command.   This method is enabled only if the Application command property is enabled.
-   - FMSTR1_AppCmdSetResponseData -This function can be used before the Application Command processing is finished, when there 
-                are any data to be returned back to the PC.  This method is enabled only if the Application command property is 
-                enabled.
-
 Module "SW1"       (component BitIO)
    - SW1_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
                 returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 

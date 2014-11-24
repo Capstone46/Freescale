@@ -29,18 +29,10 @@ Sources/MMA8451.o: ../Sources/MMA8451.c \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/LEDpin2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd2.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_defcfg.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfg.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfggen.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_tsa.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PTC.h \
  C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/I2C2.h \
- C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/stdlib.h \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/cstdlib \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/div_t.h \
@@ -111,20 +103,6 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/WAIT1.h:
 
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/UART0.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_defcfg.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfg.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_cfggen.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/freemaster_tsa.h:
-
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/SW1.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/BitIoLdd3.h:
@@ -132,8 +110,6 @@ C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/PTC.h:
 
 C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/I2C2.h:
-
-C:/Users/nicho_000/Documents/GitHub/Freescale/CW/GitHubGuyKL46Project/Generated_Code/FMSTR1.h:
 
 C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/stdlib.h:
 

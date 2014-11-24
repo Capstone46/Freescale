@@ -20,11 +20,8 @@ Generated_Code/PE_LDD.o: ../Generated_Code/PE_LDD.c \
  C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Types.h \
  ../Generated_Code/LEDG.h ../Generated_Code/LEDpin2.h \
  ../Generated_Code/BitIoLdd2.h ../Generated_Code/WAIT1.h \
- ../Generated_Code/FMSTR1.h ../Generated_Code/UART0.h \
- ../Generated_Code/freemaster.h ../Generated_Code/freemaster_defcfg.h \
- ../Generated_Code/freemaster_cfg.h ../Generated_Code/freemaster_cfggen.h \
- ../Generated_Code/freemaster_tsa.h ../Generated_Code/SW1.h \
- ../Generated_Code/BitIoLdd3.h ../Generated_Code/PTC.h
+ ../Generated_Code/SW1.h ../Generated_Code/BitIoLdd3.h \
+ ../Generated_Code/PTC.h
 
 C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -81,20 +78,6 @@ C:/Freescale/CW\ MCU\ v10.6\ SE/MCU/ProcessorExpert/lib/Kinetis/pdd/inc/PDD_Type
 ../Generated_Code/BitIoLdd2.h:
 
 ../Generated_Code/WAIT1.h:
-
-../Generated_Code/FMSTR1.h:
-
-../Generated_Code/UART0.h:
-
-../Generated_Code/freemaster.h:
-
-../Generated_Code/freemaster_defcfg.h:
-
-../Generated_Code/freemaster_cfg.h:
-
-../Generated_Code/freemaster_cfggen.h:
-
-../Generated_Code/freemaster_tsa.h:
 
 ../Generated_Code/SW1.h:
 

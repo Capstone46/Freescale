@@ -925,14 +925,7 @@ PE_DEBUGHALT();
         <boolgroup name="Pin 9" v="Do not initialize" />
         <boolgroup name="Pin 10" v="Do not initialize" />
         <boolgroup name="Pin 11" v="Do not initialize" />
-        <boolgroup name="Pin 12" v="Initialize">
-          <Pin_direction v="No initialization" />
-          <Output_value v="No initialization" />
-          <Pull_resistor v="Enabled" />
-          <Pull_selection v="Pull Up" />
-          <Slew_rate v="No initialization" />
-          <Interrupt_DMA_request v="No initialization" />
-        </boolgroup>
+        <boolgroup name="Pin 12" v="Do not initialize" />
         <boolgroup name="Pin 13" v="Do not initialize" />
         <boolgroup name="Pin 16" v="Do not initialize" />
         <boolgroup name="Pin 17" v="Do not initialize" />
@@ -966,12 +959,7 @@ PE_DEBUGHALT();
         <boolgroup name="Pin 23" v="Disabled" />
       </group>
       <group name="Interrupts">
-        <boolgroup name="Port interrupt" v="Enabled">
-          <Interrupt v="INT_PORTC_PORTD" />
-          <Interrupt_request v="Disabled" />
-          <Interrupt_priority v="0 (Highest)" />
-          <ISR_Name v="" />
-        </boolgroup>
+        <boolgroup name="Port interrupt" v="Disabled" />
       </group>
       <group name="Initialization">
         <Call_Init_method v="yes" />

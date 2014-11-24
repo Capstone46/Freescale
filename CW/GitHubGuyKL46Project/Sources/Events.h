@@ -42,8 +42,6 @@
 #include "LEDpin2.h"
 #include "BitIoLdd2.h"
 #include "WAIT1.h"
-#include "FMSTR1.h"
-#include "UART0.h"
 #include "SW1.h"
 #include "BitIoLdd3.h"
 #include "PTC.h"
